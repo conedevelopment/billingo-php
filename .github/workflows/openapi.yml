@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+
+name: "OpenAPI"
+
+on:
+    schedule:
+    # Update Monday
+    - cron: "31 04 * * 1"
+    workflow_dispatch: null
+
+permissions:
+    contents: "write"
+
+concurrency:
+    group: "${{ github.workflow }}-${{ github.ref }}"
+    cancel-in-progress: true
+
+jobs:
+    generate:
+        name: "Generate PHP client"
+        strategy:
+            matrix:
+                openapi-version:
+                - "6.6.0"
+                billingo-spec:
+                - "3.0.15"
+        runs-on: "ubuntu-22.04"
+        timeout-minutes: 5
+        steps:
+        -
+            name: "Checkout repository"
+            uses: "actions/checkout@v4"
+        -
+            name: "Set up Java"
+            uses: "actions/setup-java@v4"
+            with:
+                distribution: "temurin"
+                java-version: "17"
+        -
+            name: "Install OpenAPI"
+            run: |
+                wget -O "${{ runner.temp }}/openapi-generator-cli.jar" \
+                    "https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/${{ matrix.openapi-version }}/openapi-generator-cli-${{ matrix.openapi-version }}.jar"
+        -
+            name: "Download spec"
+            run: |
+                wget -O "${{ runner.temp }}/spec.json" \
+                    "https://app.swaggerhub.com/apiproxy/registry/Billingo/Billingo/${{ matrix.billingo-spec }}"
+        -
+            name: "Generate client"
+            run: |
+                java -jar "${{ runner.temp }}/openapi-generator-cli.jar" generate \
+                    --input-spec "${{ runner.temp }}/spec.json" \
+                    --generator-name php \
+                    --output ./ \
+                    --additional-properties 'invokerPackage=Cone\Billingo'
+        -
+            name: "Check difference to repository"
+            id: "list_diff"
+            run: |
+              if ! git diff --exit-code; then
+                echo "exit_status=1" >>"${GITHUB_OUTPUT}"
+              fi
+        -
+            name: "Create pull request"
+            if: "${{ steps.list_diff.outputs.exit_status == '1' }}"
+            uses: "peter-evans/create-pull-request@v4"
+            with:
+              add-paths: "./"
+              branch: "php-client"
+              commit-message: "Upgrade client"
+              title: "PHP client"
+              body: |
+                  Automated changes by running `openapi-generator-cli.jar generate`.
+              delete-branch: true
