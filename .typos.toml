@@ -1,0 +1,31 @@
+[files]
+extend-exclude = [
+    ".git/",
+    "lib/Model/Country.php",
+]
+ignore-hidden = false
+
+[default]
+extend-ignore-re = [
+]
+
+[default.extend-words]
+# Typos in Billingo spec
+# addresses
+"adresses" = "adresses"
+# history
+"histroy" = "histroy"
+# occurred
+"occured" = "occured"
+# readded
+"readed" = "readed"
+# retrieves
+"retrives" = "retrives"
+# succeeded
+"succeded" = "succeded"
+
+[default.extend-identifiers]
+"NAM_1" = "NAM_1"
+"NAM_2" = "NAM_2"
+"PICK_PACK_PONT" = "PICK_PACK_PONT"
+"pick_pack_pont" = "pick_pack_pont"
