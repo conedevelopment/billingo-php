@@ -1,20 +1,22 @@
 {
-    "description": "This is a Billingo API v3 documentation. Our API based on REST software architectural style. API has resource-oriented URLs, accepts JSON-encoded request bodies and returns JSON-encoded responses. To use this API you have to generate a new API key on our [site](https://app.billingo.hu/api-key). After that, you can test your API key on this page.",
+    "name": "conedevelopment/billingo",
+    "description": "The Billingo PHP SDK.",
     "keywords": [
-        "openapitools",
-        "openapi-generator",
         "openapi",
         "php",
         "sdk",
-        "rest",
         "api"
     ],
-    "homepage": "https://openapi-generator.tech",
-    "license": "unlicense",
+    "homepage": "https://conedevelopment.com",
+    "license": "MIT",
     "authors": [
         {
-            "name": "OpenAPI-Generator contributors",
-            "homepage": "https://openapi-generator.tech"
+            "name": "Cone Development",
+            "homepage": "https://conedevelopment.com"
+        },
+        {
+            "name": "Szépe Viktor",
+            "homepage": "https://szepe.net"
         }
     ],
     "require": {
@@ -30,9 +32,13 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "Cone\\Billingo\\" : "lib/" }
+        "psr-4": {
+            "Cone\\Billingo\\" : "lib/"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "Cone\\Billingo\\Test\\" : "test/" }
+        "psr-4": {
+            "Cone\\Billingo\\Test\\" : "test/"
+        }
     }
 }

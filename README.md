@@ -14,7 +14,7 @@ Should also work with PHP 8.0.
 ## Getting Started
 
 ```php
-$client = new Cone\Billing\Billingo('API_KEY');
+$client = new Cone\Billingo\Billingo('API_KEY');
 
 // Config
 $client->config();
