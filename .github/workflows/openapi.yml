@@ -59,18 +59,18 @@ jobs:
             name: "Check difference to repository"
             id: "list_diff"
             run: |
-              if ! git diff --exit-code; then
-                echo "exit_status=1" >>"${GITHUB_OUTPUT}"
-              fi
+                if ! git diff --exit-code; then
+                    echo "exit_status=1" >>"${GITHUB_OUTPUT}"
+                fi
         -
             name: "Create pull request"
             if: "${{ steps.list_diff.outputs.exit_status == '1' }}"
             uses: "peter-evans/create-pull-request@v4"
             with:
-              add-paths: "./"
-              branch: "php-client"
-              commit-message: "Upgrade client"
-              title: "Upgrade PHP client to ${{ matrix.billingo-spec }}"
-              body: |
-                  Automated changes by running `openapi-generator-cli.jar generate`.
-              delete-branch: true
+                add-paths: "./"
+                branch: "php-client"
+                commit-message: "Upgrade client"
+                title: "Upgrade PHP client to ${{ matrix.billingo-spec }}"
+                body: |
+                    Automated changes by running `openapi-generator-cli.jar generate`.
+                delete-branch: true
