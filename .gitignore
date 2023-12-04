@@ -8,3 +8,4 @@ composer.phar
 
 # PHPUnit cache
 .phpunit.result.cache
+.phpunit.cache/
