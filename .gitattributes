@@ -1,0 +1,13 @@
+/.editorconfig export-ignore
+/.github/ export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.openapi-generator-ignore export-ignore
+/.openapi-generator/ export-ignore
+/.php-cs-fixer.dist.php export-ignore
+/.typos.toml export-ignore
+/docs/ export-ignore
+/lib/** linguist-generated
+/lib/Billingo.php -linguist-generated
+/phpunit.xml.dist export-ignore
+/test/ export-ignore
