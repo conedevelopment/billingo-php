@@ -1,18 +1,19 @@
-# Billingo PHP SKD
+# Billingo PHP SDK
 
-## Installation & Usage
+## Installation
 
 ### Requirements
 
 PHP 7.4 and later.
+
 Should also work with PHP 8.0.
 
-## Getting Started
+## Usage
 
 ```php
 $client = new Cone\Billingo\Billingo('API_KEY');
 
-// Config
+// Configuration
 $client->config();
 
 // Bank accounts
