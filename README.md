@@ -4,9 +4,7 @@
 
 ### Requirements
 
-PHP 7.4 and later.
-
-Should also work with PHP 8.0.
+PHP 8.0 or later.
 
 ## Usage
 
