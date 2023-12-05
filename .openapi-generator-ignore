@@ -3,5 +3,6 @@
 /git_push.sh
 /composer.json
 /README.md
-/test
-/docs
+/test/
+/docs/
+/ phpunit.xml.dist
