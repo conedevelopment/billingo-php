@@ -12,7 +12,7 @@ All URIs are relative to https://api.billingo.hu/v3, except if the operation def
 ## `checkTaxNumber()`
 
 ```php
-checkTaxNumber($tax_number): \Cone\Billingo\Model\TaxNumber
+checkTaxNumber($taxNumber): \Cone\Billingo\Model\TaxNumber
 ```
 
 Check tax number.
@@ -38,10 +38,10 @@ $apiInstance = new Cone\Billingo\Api\UtilApi(
     new GuzzleHttp\Client(),
     $config
 );
-$tax_number = 'tax_number_example'; // string
+$taxNumber = 'taxNumber_example'; // string
 
 try {
-    $result = $apiInstance->checkTaxNumber($tax_number);
+    $result = $apiInstance->checkTaxNumber($taxNumber);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UtilApi->checkTaxNumber: ', $e->getMessage(), PHP_EOL;
@@ -52,7 +52,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **tax_number** | **string**|  | |
+| **taxNumber** | **string**|  | |
 
 ### Return type
 

@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  |
-**unit_price** | **float** |  |
-**unit_price_type** | [**\Cone\Billingo\Model\UnitPriceType**](UnitPriceType.md) |  |
+**unitPrice** | **float** |  |
+**unitPriceType** | [**\Cone\Billingo\Model\UnitPriceType**](UnitPriceType.md) |  |
 **quantity** | **float** |  |
 **unit** | **string** |  |
 **vat** | [**\Cone\Billingo\Model\Vat**](Vat.md) |  |

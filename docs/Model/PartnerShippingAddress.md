@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**country_code** | [**\Cone\Billingo\Model\Country**](Country.md) |  |
-**post_code** | **string** |  |
+**countryCode** | [**\Cone\Billingo\Model\Country**](Country.md) |  |
+**postCode** | **string** |  |
 **city** | **string** |  |
 **address** | **string** |  |
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**product_id** | **int** |  |
+**productId** | **int** |  |
 **quantity** | **float** |  |
 **comment** | **string** |  | [optional]
 

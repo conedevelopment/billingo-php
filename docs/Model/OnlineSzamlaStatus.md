@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**transaction_id** | **string** |  | [optional]
+**transactionId** | **string** |  | [optional]
 **status** | **string** |  | [optional]
 **messages** | [**\Cone\Billingo\Model\OnlineSzamlaStatusMessage[]**](OnlineSzamlaStatusMessage.md) |  | [optional]
 

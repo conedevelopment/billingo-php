@@ -73,7 +73,7 @@ try {
 ## `listPartner()`
 
 ```php
-listPartner($page, $per_page, $query): \Cone\Billingo\Model\PartnerList
+listPartner($page, $perPage, $query): \Cone\Billingo\Model\PartnerList
 ```
 
 List all partners
@@ -100,11 +100,11 @@ $apiInstance = new Cone\Billingo\Api\PartnerApi(
     $config
 );
 $page = 56; // int
-$per_page = 25; // int
+$perPage = 25; // int
 $query = 'query_example'; // string
 
 try {
-    $result = $apiInstance->listPartner($page, $per_page, $query);
+    $result = $apiInstance->listPartner($page, $perPage, $query);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling PartnerApi->listPartner: ', $e->getMessage(), PHP_EOL;
@@ -116,7 +116,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **page** | **int**|  | [optional] |
-| **per_page** | **int**|  | [optional] [default to 25] |
+| **perPage** | **int**|  | [optional] [default to 25] |
 | **query** | **string**|  | [optional] |
 
 ### Return type

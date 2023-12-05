@@ -199,7 +199,7 @@ try {
 ## `listProduct()`
 
 ```php
-listProduct($page, $per_page, $query): \Cone\Billingo\Model\ProductList
+listProduct($page, $perPage, $query): \Cone\Billingo\Model\ProductList
 ```
 
 List all product
@@ -226,11 +226,11 @@ $apiInstance = new Cone\Billingo\Api\ProductApi(
     $config
 );
 $page = 56; // int
-$per_page = 25; // int
+$perPage = 25; // int
 $query = 'query_example'; // string
 
 try {
-    $result = $apiInstance->listProduct($page, $per_page, $query);
+    $result = $apiInstance->listProduct($page, $perPage, $query);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ProductApi->listProduct: ', $e->getMessage(), PHP_EOL;
@@ -242,7 +242,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **page** | **int**|  | [optional] |
-| **per_page** | **int**|  | [optional] [default to 25] |
+| **perPage** | **int**|  | [optional] [default to 25] |
 | **query** | **string**|  | [optional] |
 
 ### Return type
