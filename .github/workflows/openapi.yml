@@ -19,12 +19,6 @@ concurrency:
 jobs:
     generate:
         name: "Generate PHP client"
-        strategy:
-            matrix:
-                openapi-version:
-                - "7.1.0"
-                billingo-spec:
-                - "3.0.14"
         runs-on: "ubuntu-22.04"
         timeout-minutes: 5
         steps:
@@ -38,15 +32,38 @@ jobs:
                 distribution: "temurin"
                 java-version: "17"
         -
+            name: "Install xmlstarlet"
+            run: |
+                sudo -- apt-get update
+                sudo -- apt-get install -y xmlstarlet
+        -
+            name: "Determine OpenAPI CLI version"
+            id: "openapi_cli"
+            run: |
+                VERSION="$(
+                    wget -qO- "https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/maven-metadata.xml" \
+                        | xmlstarlet sel -t -v '//metadata/versioning/versions/version[last()]'
+                )"
+                echo "version=${VERSION}" >>"${GITHUB_OUTPUT}"
+        -
+            name: "Determine latest spec version"
+            id: "billingo_spec"
+            run: |
+                VERSION="$(
+                    wget -qO- "https://api.swaggerhub.com/apis/Billingo/Billingo/settings/default" \
+                        | jq -r '."version"'
+                )"
+                echo "version=${VERSION}" >>"${GITHUB_OUTPUT}"
+        -
             name: "Install OpenAPI"
             run: |
                 wget -O "${{ runner.temp }}/openapi-generator-cli.jar" \
-                    "https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/${{ matrix.openapi-version }}/openapi-generator-cli-${{ matrix.openapi-version }}.jar"
+                    "https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/${{ steps.openapi_cli.outputs.version }}/openapi-generator-cli-${{ steps.openapi_cli.outputs.version }}.jar"
         -
             name: "Download spec"
             run: |
                 wget -O "${{ runner.temp }}/spec.json" \
-                    "https://app.swaggerhub.com/apiproxy/registry/Billingo/Billingo/${{ matrix.billingo-spec }}"
+                    "https://app.swaggerhub.com/apiproxy/registry/Billingo/Billingo/${{ steps.billingo_spec.outputs.version }}"
         -
             name: "Generate client"
             run: |
