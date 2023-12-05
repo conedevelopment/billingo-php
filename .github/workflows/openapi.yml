@@ -65,6 +65,10 @@ jobs:
                 wget -O "${{ runner.temp }}/spec.json" \
                     "https://api.swaggerhub.com/apis/Billingo/Billingo/${{ steps.billingo_spec.outputs.version }}?resolved=false&flatten=false"
         -
+            name: "Clean up previously generated files"
+            run: |
+                cat .openapi-generator/FILES | xargs 
+        -
             name: "Generate client"
             run: |
                 java -jar "${{ runner.temp }}/openapi-generator-cli.jar" generate \
