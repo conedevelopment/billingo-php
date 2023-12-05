@@ -87,7 +87,7 @@ jobs:
                 add-paths: "./"
                 branch: "php-client"
                 commit-message: "Upgrade client"
-                title: "Upgrade PHP client to ${{ matrix.billingo-spec }}"
+                title: "Upgrade PHP client to ${{ steps.billingo_spec.outputs.version }}"
                 body: |
                     Automated changes by running `openapi-generator-cli.jar generate`.
                 delete-branch: true
