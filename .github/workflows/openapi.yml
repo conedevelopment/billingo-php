@@ -63,7 +63,7 @@ jobs:
             name: "Download spec"
             run: |
                 wget -O "${{ runner.temp }}/spec.json" \
-                    "https://app.swaggerhub.com/apiproxy/registry/Billingo/Billingo/${{ steps.billingo_spec.outputs.version }}"
+                    "https://api.swaggerhub.com/apis/Billingo/Billingo/${{ steps.billingo_spec.outputs.version }}?resolved=false&flatten=false"
         -
             name: "Generate client"
             run: |
