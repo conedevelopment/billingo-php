@@ -22,9 +22,9 @@ jobs:
         strategy:
             matrix:
                 openapi-version:
-                - "6.6.0"
+                - "7.1.0"
                 billingo-spec:
-                - "3.0.15"
+                - "3.0.14"
         runs-on: "ubuntu-22.04"
         timeout-minutes: 5
         steps:
