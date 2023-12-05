@@ -67,7 +67,7 @@ jobs:
         -
             name: "Clean up previously generated files"
             run: |
-                cat .openapi-generator/FILES | xargs 
+                cat .openapi-generator/FILES | xargs -- rm -f -r
         -
             name: "Generate client"
             run: |
