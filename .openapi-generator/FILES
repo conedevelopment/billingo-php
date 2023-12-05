@@ -211,4 +211,3 @@ src/Model/ValidationError.php
 src/Model/ValidationErrorResponse.php
 src/Model/Vat.php
 src/ObjectSerializer.php
-test/Api/DocumentBlockApiTest.php
