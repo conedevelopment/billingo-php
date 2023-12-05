@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**product_id** | **int** |  |
+**productId** | **int** |  |
 **name** | **string** |  | [optional]
-**unit_price** | **float** |  |
+**unitPrice** | **float** |  |
 **vat** | [**\Cone\Billingo\Model\Vat**](Vat.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

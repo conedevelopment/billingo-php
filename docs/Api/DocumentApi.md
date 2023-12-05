@@ -91,7 +91,7 @@ void (empty response body)
 ## `cancelDocument()`
 
 ```php
-cancelDocument($id, $document_cancellation): \Cone\Billingo\Model\Document
+cancelDocument($id, $documentCancellation): \Cone\Billingo\Model\Document
 ```
 
 Cancel a document
@@ -118,10 +118,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $id = 56; // int
-$document_cancellation = new \Cone\Billingo\Model\DocumentCancellation(); // \Cone\Billingo\Model\DocumentCancellation | Comment and notifiable email addresses - comma separated for multiple email addresses
+$documentCancellation = new \Cone\Billingo\Model\DocumentCancellation(); // \Cone\Billingo\Model\DocumentCancellation | Comment and notifiable email addresses - comma separated for multiple email addresses
 
 try {
-    $result = $apiInstance->cancelDocument($id, $document_cancellation);
+    $result = $apiInstance->cancelDocument($id, $documentCancellation);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->cancelDocument: ', $e->getMessage(), PHP_EOL;
@@ -133,7 +133,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **document_cancellation** | [**\Cone\Billingo\Model\DocumentCancellation**](../Model/DocumentCancellation.md)| Comment and notifiable email addresses - comma separated for multiple email addresses | [optional] |
+| **documentCancellation** | [**\Cone\Billingo\Model\DocumentCancellation**](../Model/DocumentCancellation.md)| Comment and notifiable email addresses - comma separated for multiple email addresses | [optional] |
 
 ### Return type
 
@@ -155,7 +155,7 @@ try {
 ## `createDocument()`
 
 ```php
-createDocument($document_insert): \Cone\Billingo\Model\Document
+createDocument($documentInsert): \Cone\Billingo\Model\Document
 ```
 
 Create a document
@@ -181,10 +181,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     new GuzzleHttp\Client(),
     $config
 );
-$document_insert = new \Cone\Billingo\Model\DocumentInsert(); // \Cone\Billingo\Model\DocumentInsert | DocumentInsert object that you would like to store.
+$documentInsert = new \Cone\Billingo\Model\DocumentInsert(); // \Cone\Billingo\Model\DocumentInsert | DocumentInsert object that you would like to store.
 
 try {
-    $result = $apiInstance->createDocument($document_insert);
+    $result = $apiInstance->createDocument($documentInsert);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->createDocument: ', $e->getMessage(), PHP_EOL;
@@ -195,7 +195,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **document_insert** | [**\Cone\Billingo\Model\DocumentInsert**](../Model/DocumentInsert.md)| DocumentInsert object that you would like to store. | |
+| **documentInsert** | [**\Cone\Billingo\Model\DocumentInsert**](../Model/DocumentInsert.md)| DocumentInsert object that you would like to store. | |
 
 ### Return type
 
@@ -217,7 +217,7 @@ try {
 ## `createDocumentFromDraft()`
 
 ```php
-createDocumentFromDraft($id, $document_insert): \Cone\Billingo\Model\Document
+createDocumentFromDraft($id, $documentInsert): \Cone\Billingo\Model\Document
 ```
 
 Converts a draft to an invoice.
@@ -244,10 +244,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $id = 56; // int
-$document_insert = new \Cone\Billingo\Model\DocumentInsert(); // \Cone\Billingo\Model\DocumentInsert | DocumentInsert object that you would like to store.
+$documentInsert = new \Cone\Billingo\Model\DocumentInsert(); // \Cone\Billingo\Model\DocumentInsert | DocumentInsert object that you would like to store.
 
 try {
-    $result = $apiInstance->createDocumentFromDraft($id, $document_insert);
+    $result = $apiInstance->createDocumentFromDraft($id, $documentInsert);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->createDocumentFromDraft: ', $e->getMessage(), PHP_EOL;
@@ -259,7 +259,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **document_insert** | [**\Cone\Billingo\Model\DocumentInsert**](../Model/DocumentInsert.md)| DocumentInsert object that you would like to store. | |
+| **documentInsert** | [**\Cone\Billingo\Model\DocumentInsert**](../Model/DocumentInsert.md)| DocumentInsert object that you would like to store. | |
 
 ### Return type
 
@@ -281,7 +281,7 @@ try {
 ## `createDocumentFromProforma()`
 
 ```php
-createDocumentFromProforma($id, $invoice_settings): \Cone\Billingo\Model\Document
+createDocumentFromProforma($id, $invoiceSettings): \Cone\Billingo\Model\Document
 ```
 
 Create a document from proforma.
@@ -308,10 +308,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $id = 56; // int
-$invoice_settings = new \Cone\Billingo\Model\InvoiceSettings(); // \Cone\Billingo\Model\InvoiceSettings | InvoiceSettings object.
+$invoiceSettings = new \Cone\Billingo\Model\InvoiceSettings(); // \Cone\Billingo\Model\InvoiceSettings | InvoiceSettings object.
 
 try {
-    $result = $apiInstance->createDocumentFromProforma($id, $invoice_settings);
+    $result = $apiInstance->createDocumentFromProforma($id, $invoiceSettings);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->createDocumentFromProforma: ', $e->getMessage(), PHP_EOL;
@@ -323,7 +323,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **invoice_settings** | [**\Cone\Billingo\Model\InvoiceSettings**](../Model/InvoiceSettings.md)| InvoiceSettings object. | [optional] |
+| **invoiceSettings** | [**\Cone\Billingo\Model\InvoiceSettings**](../Model/InvoiceSettings.md)| InvoiceSettings object. | [optional] |
 
 ### Return type
 
@@ -345,7 +345,7 @@ try {
 ## `createModificationDocument()`
 
 ```php
-createModificationDocument($id, $modification_document_insert): \Cone\Billingo\Model\Document
+createModificationDocument($id, $modificationDocumentInsert): \Cone\Billingo\Model\Document
 ```
 
 Create a modification document.
@@ -372,10 +372,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $id = 56; // int
-$modification_document_insert = new \Cone\Billingo\Model\ModificationDocumentInsert(); // \Cone\Billingo\Model\ModificationDocumentInsert | ModificationDocumentInsert object that you would like to store.
+$modificationDocumentInsert = new \Cone\Billingo\Model\ModificationDocumentInsert(); // \Cone\Billingo\Model\ModificationDocumentInsert | ModificationDocumentInsert object that you would like to store.
 
 try {
-    $result = $apiInstance->createModificationDocument($id, $modification_document_insert);
+    $result = $apiInstance->createModificationDocument($id, $modificationDocumentInsert);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->createModificationDocument: ', $e->getMessage(), PHP_EOL;
@@ -387,7 +387,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **modification_document_insert** | [**\Cone\Billingo\Model\ModificationDocumentInsert**](../Model/ModificationDocumentInsert.md)| ModificationDocumentInsert object that you would like to store. | |
+| **modificationDocumentInsert** | [**\Cone\Billingo\Model\ModificationDocumentInsert**](../Model/ModificationDocumentInsert.md)| ModificationDocumentInsert object that you would like to store. | |
 
 ### Return type
 
@@ -409,7 +409,7 @@ try {
 ## `createReceipt()`
 
 ```php
-createReceipt($receipt_insert): \Cone\Billingo\Model\Document
+createReceipt($receiptInsert): \Cone\Billingo\Model\Document
 ```
 
 Create a receipt
@@ -435,10 +435,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     new GuzzleHttp\Client(),
     $config
 );
-$receipt_insert = new \Cone\Billingo\Model\ReceiptInsert(); // \Cone\Billingo\Model\ReceiptInsert | ReceiptInsert object that you would like to store.
+$receiptInsert = new \Cone\Billingo\Model\ReceiptInsert(); // \Cone\Billingo\Model\ReceiptInsert | ReceiptInsert object that you would like to store.
 
 try {
-    $result = $apiInstance->createReceipt($receipt_insert);
+    $result = $apiInstance->createReceipt($receiptInsert);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->createReceipt: ', $e->getMessage(), PHP_EOL;
@@ -449,7 +449,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **receipt_insert** | [**\Cone\Billingo\Model\ReceiptInsert**](../Model/ReceiptInsert.md)| ReceiptInsert object that you would like to store. | |
+| **receiptInsert** | [**\Cone\Billingo\Model\ReceiptInsert**](../Model/ReceiptInsert.md)| ReceiptInsert object that you would like to store. | |
 
 ### Return type
 
@@ -471,7 +471,7 @@ try {
 ## `createReceiptFromDraft()`
 
 ```php
-createReceiptFromDraft($id, $receipt_insert): \Cone\Billingo\Model\Document
+createReceiptFromDraft($id, $receiptInsert): \Cone\Billingo\Model\Document
 ```
 
 Converts a draft to a receipt.
@@ -498,10 +498,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $id = 56; // int
-$receipt_insert = new \Cone\Billingo\Model\ReceiptInsert(); // \Cone\Billingo\Model\ReceiptInsert | ReceiptInsert object that you would like to store.
+$receiptInsert = new \Cone\Billingo\Model\ReceiptInsert(); // \Cone\Billingo\Model\ReceiptInsert | ReceiptInsert object that you would like to store.
 
 try {
-    $result = $apiInstance->createReceiptFromDraft($id, $receipt_insert);
+    $result = $apiInstance->createReceiptFromDraft($id, $receiptInsert);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->createReceiptFromDraft: ', $e->getMessage(), PHP_EOL;
@@ -513,7 +513,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **receipt_insert** | [**\Cone\Billingo\Model\ReceiptInsert**](../Model/ReceiptInsert.md)| ReceiptInsert object that you would like to store. | |
+| **receiptInsert** | [**\Cone\Billingo\Model\ReceiptInsert**](../Model/ReceiptInsert.md)| ReceiptInsert object that you would like to store. | |
 
 ### Return type
 
@@ -844,7 +844,7 @@ try {
 ## `getDocumentByVendorId()`
 
 ```php
-getDocumentByVendorId($vendor_id): \Cone\Billingo\Model\Document
+getDocumentByVendorId($vendorId): \Cone\Billingo\Model\Document
 ```
 
 Retrieve a document by vendor id
@@ -870,10 +870,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     new GuzzleHttp\Client(),
     $config
 );
-$vendor_id = 'vendor_id_example'; // string
+$vendorId = 'vendorId_example'; // string
 
 try {
-    $result = $apiInstance->getDocumentByVendorId($vendor_id);
+    $result = $apiInstance->getDocumentByVendorId($vendorId);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->getDocumentByVendorId: ', $e->getMessage(), PHP_EOL;
@@ -884,7 +884,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **vendor_id** | **string**|  | |
+| **vendorId** | **string**|  | |
 
 ### Return type
 
@@ -1092,7 +1092,7 @@ try {
 ## `listDocument()`
 
 ```php
-listDocument($page, $per_page, $block_id, $partner_id, $payment_method, $payment_status, $start_date, $end_date, $start_number, $end_number, $start_year, $end_year, $type, $query, $paid_start_date, $paid_end_date, $fulfillment_start_date, $fulfillment_end_date, $last_modified_date): \Cone\Billingo\Model\DocumentList
+listDocument($page, $perPage, $blockId, $partnerId, $paymentMethod, $paymentStatus, $startDate, $endDate, $startNumber, $endNumber, $startYear, $endYear, $type, $query, $paidStartDate, $paidEndDate, $fulfillmentStartDate, $fulfillmentEndDate, $lastModifiedDate): \Cone\Billingo\Model\DocumentList
 ```
 
 List all documents
@@ -1119,27 +1119,27 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $page = 56; // int
-$per_page = 25; // int
-$block_id = 56; // int | Filter documents by the identifier of your DocumentBlock.
-$partner_id = 56; // int | Filter documents by the identifier of your Partner.
-$payment_method = cash; // PaymentMethod | Filter documents by PaymentMethod value.
-$payment_status = paid; // PaymentStatus | Filter documents by PaymentStatus value.
-$start_date = 2020-05-15; // \DateTime | Filter documents by their invoice date.
-$end_date = 2020-05-15; // \DateTime | Filter documents by their invoice date.
-$start_number = 1; // int | Starting number of the document, should not contain year or any other formatting. Required if `start_year` given
-$end_number = 10; // int | Ending number of the document, should not contain year or any other formatting. Required if `end_year` given
-$start_year = 2020; // int | Year for `start_number` parameter. Required if `start_number` given.
-$end_year = 2020; // int | Year for `end_number` parameter. Required if `end_number` given.
+$perPage = 25; // int
+$blockId = 56; // int | Filter documents by the identifier of your DocumentBlock.
+$partnerId = 56; // int | Filter documents by the identifier of your Partner.
+$paymentMethod = cash; // PaymentMethod | Filter documents by PaymentMethod value.
+$paymentStatus = paid; // PaymentStatus | Filter documents by PaymentStatus value.
+$startDate = 2020-05-15; // \DateTime | Filter documents by their invoice date.
+$endDate = 2020-05-15; // \DateTime | Filter documents by their invoice date.
+$startNumber = 1; // int | Starting number of the document, should not contain year or any other formatting. Required if `start_year` given
+$endNumber = 10; // int | Ending number of the document, should not contain year or any other formatting. Required if `end_year` given
+$startYear = 2020; // int | Year for `start_number` parameter. Required if `start_number` given.
+$endYear = 2020; // int | Year for `end_number` parameter. Required if `end_number` given.
 $type = invoice; // DocumentType | Filter documents by type
 $query = 'query_example'; // string | Filter documents by the given text
-$paid_start_date = 2020-05-15; // \DateTime | Filter documents by their payment date.
-$paid_end_date = 2020-05-15; // \DateTime | Filter documents by their payment date.
-$fulfillment_start_date = 2020-05-15; // \DateTime | Filter documents by their fulfillment date.
-$fulfillment_end_date = 2020-05-15; // \DateTime | Filter documents by their fulfillment date.
-$last_modified_date = 2021-09-03 11:27:00; // string | Filter documents by their last modified date.
+$paidStartDate = 2020-05-15; // \DateTime | Filter documents by their payment date.
+$paidEndDate = 2020-05-15; // \DateTime | Filter documents by their payment date.
+$fulfillmentStartDate = 2020-05-15; // \DateTime | Filter documents by their fulfillment date.
+$fulfillmentEndDate = 2020-05-15; // \DateTime | Filter documents by their fulfillment date.
+$lastModifiedDate = 2021-09-03 11:27:00; // string | Filter documents by their last modified date.
 
 try {
-    $result = $apiInstance->listDocument($page, $per_page, $block_id, $partner_id, $payment_method, $payment_status, $start_date, $end_date, $start_number, $end_number, $start_year, $end_year, $type, $query, $paid_start_date, $paid_end_date, $fulfillment_start_date, $fulfillment_end_date, $last_modified_date);
+    $result = $apiInstance->listDocument($page, $perPage, $blockId, $partnerId, $paymentMethod, $paymentStatus, $startDate, $endDate, $startNumber, $endNumber, $startYear, $endYear, $type, $query, $paidStartDate, $paidEndDate, $fulfillmentStartDate, $fulfillmentEndDate, $lastModifiedDate);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->listDocument: ', $e->getMessage(), PHP_EOL;
@@ -1151,24 +1151,24 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **page** | **int**|  | [optional] |
-| **per_page** | **int**|  | [optional] [default to 25] |
-| **block_id** | **int**| Filter documents by the identifier of your DocumentBlock. | [optional] |
-| **partner_id** | **int**| Filter documents by the identifier of your Partner. | [optional] |
-| **payment_method** | [**PaymentMethod**](../Model/.md)| Filter documents by PaymentMethod value. | [optional] |
-| **payment_status** | [**PaymentStatus**](../Model/.md)| Filter documents by PaymentStatus value. | [optional] |
-| **start_date** | **\DateTime**| Filter documents by their invoice date. | [optional] |
-| **end_date** | **\DateTime**| Filter documents by their invoice date. | [optional] |
-| **start_number** | **int**| Starting number of the document, should not contain year or any other formatting. Required if &#x60;start_year&#x60; given | [optional] |
-| **end_number** | **int**| Ending number of the document, should not contain year or any other formatting. Required if &#x60;end_year&#x60; given | [optional] |
-| **start_year** | **int**| Year for &#x60;start_number&#x60; parameter. Required if &#x60;start_number&#x60; given. | [optional] |
-| **end_year** | **int**| Year for &#x60;end_number&#x60; parameter. Required if &#x60;end_number&#x60; given. | [optional] |
+| **perPage** | **int**|  | [optional] [default to 25] |
+| **blockId** | **int**| Filter documents by the identifier of your DocumentBlock. | [optional] |
+| **partnerId** | **int**| Filter documents by the identifier of your Partner. | [optional] |
+| **paymentMethod** | [**PaymentMethod**](../Model/.md)| Filter documents by PaymentMethod value. | [optional] |
+| **paymentStatus** | [**PaymentStatus**](../Model/.md)| Filter documents by PaymentStatus value. | [optional] |
+| **startDate** | **\DateTime**| Filter documents by their invoice date. | [optional] |
+| **endDate** | **\DateTime**| Filter documents by their invoice date. | [optional] |
+| **startNumber** | **int**| Starting number of the document, should not contain year or any other formatting. Required if &#x60;start_year&#x60; given | [optional] |
+| **endNumber** | **int**| Ending number of the document, should not contain year or any other formatting. Required if &#x60;end_year&#x60; given | [optional] |
+| **startYear** | **int**| Year for &#x60;start_number&#x60; parameter. Required if &#x60;start_number&#x60; given. | [optional] |
+| **endYear** | **int**| Year for &#x60;end_number&#x60; parameter. Required if &#x60;end_number&#x60; given. | [optional] |
 | **type** | [**DocumentType**](../Model/.md)| Filter documents by type | [optional] |
 | **query** | **string**| Filter documents by the given text | [optional] |
-| **paid_start_date** | **\DateTime**| Filter documents by their payment date. | [optional] |
-| **paid_end_date** | **\DateTime**| Filter documents by their payment date. | [optional] |
-| **fulfillment_start_date** | **\DateTime**| Filter documents by their fulfillment date. | [optional] |
-| **fulfillment_end_date** | **\DateTime**| Filter documents by their fulfillment date. | [optional] |
-| **last_modified_date** | **string**| Filter documents by their last modified date. | [optional] |
+| **paidStartDate** | **\DateTime**| Filter documents by their payment date. | [optional] |
+| **paidEndDate** | **\DateTime**| Filter documents by their payment date. | [optional] |
+| **fulfillmentStartDate** | **\DateTime**| Filter documents by their fulfillment date. | [optional] |
+| **fulfillmentEndDate** | **\DateTime**| Filter documents by their fulfillment date. | [optional] |
+| **lastModifiedDate** | **string**| Filter documents by their last modified date. | [optional] |
 
 ### Return type
 
@@ -1254,7 +1254,7 @@ try {
 ## `sendDocument()`
 
 ```php
-sendDocument($id, $send_document): \Cone\Billingo\Model\SendDocument
+sendDocument($id, $sendDocument): \Cone\Billingo\Model\SendDocument
 ```
 
 Send invoice to given email adresses.
@@ -1281,10 +1281,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $id = 56; // int
-$send_document = new \Cone\Billingo\Model\SendDocument(); // \Cone\Billingo\Model\SendDocument | List of email-s where you want to send the invoice.
+$sendDocument = new \Cone\Billingo\Model\SendDocument(); // \Cone\Billingo\Model\SendDocument | List of email-s where you want to send the invoice.
 
 try {
-    $result = $apiInstance->sendDocument($id, $send_document);
+    $result = $apiInstance->sendDocument($id, $sendDocument);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->sendDocument: ', $e->getMessage(), PHP_EOL;
@@ -1296,7 +1296,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **send_document** | [**\Cone\Billingo\Model\SendDocument**](../Model/SendDocument.md)| List of email-s where you want to send the invoice. | [optional] |
+| **sendDocument** | [**\Cone\Billingo\Model\SendDocument**](../Model/SendDocument.md)| List of email-s where you want to send the invoice. | [optional] |
 
 ### Return type
 
@@ -1318,7 +1318,7 @@ try {
 ## `updatePayment()`
 
 ```php
-updatePayment($id, $payment_history): \Cone\Billingo\Model\PaymentHistory[]
+updatePayment($id, $paymentHistory): \Cone\Billingo\Model\PaymentHistory[]
 ```
 
 Update payment history
@@ -1345,10 +1345,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentApi(
     $config
 );
 $id = 56; // int
-$payment_history = array(new \Cone\Billingo\Model\PaymentHistory()); // \Cone\Billingo\Model\PaymentHistory[] | Payment history object that you would like to update.
+$paymentHistory = array(new \Cone\Billingo\Model\PaymentHistory()); // \Cone\Billingo\Model\PaymentHistory[] | Payment history object that you would like to update.
 
 try {
-    $result = $apiInstance->updatePayment($id, $payment_history);
+    $result = $apiInstance->updatePayment($id, $paymentHistory);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentApi->updatePayment: ', $e->getMessage(), PHP_EOL;
@@ -1360,7 +1360,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **payment_history** | [**\Cone\Billingo\Model\PaymentHistory[]**](../Model/PaymentHistory.md)| Payment history object that you would like to update. | |
+| **paymentHistory** | [**\Cone\Billingo\Model\PaymentHistory[]**](../Model/PaymentHistory.md)| Payment history object that you would like to update. | |
 
 ### Return type
 

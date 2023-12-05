@@ -11,9 +11,8 @@ Name | Type | Description | Notes
 **taxcode** | **string** |  | [optional]
 **iban** | **string** |  | [optional]
 **swift** | **string** |  | [optional]
-**account_number** | **string** |  | [optional]
+**accountNumber** | **string** |  | [optional]
 **phone** | **string** |  | [optional]
-**tax_type** | [**\Cone\Billingo\Model\PartnerTaxType**](PartnerTaxType.md) |  | [optional]
-**partner_shipping** | [**\Cone\Billingo\Model\DocumentPartnerPartnerShipping**](DocumentPartnerPartnerShipping.md) |  | [optional]
+**taxType** | [**\Cone\Billingo\Model\PartnerTaxType**](PartnerTaxType.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

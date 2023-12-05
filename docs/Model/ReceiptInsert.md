@@ -4,15 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**vendor_id** | **string** |  | [optional]
-**partner_id** | **int** |  | [optional]
+**vendorId** | **string** |  | [optional]
+**partnerId** | **int** |  | [optional]
 **name** | **string** |  | [optional]
 **emails** | **string[]** |  | [optional]
-**block_id** | **int** |  |
+**blockId** | **int** |  |
 **type** | [**\Cone\Billingo\Model\DocumentType**](DocumentType.md) |  |
-**payment_method** | [**\Cone\Billingo\Model\PaymentMethod**](PaymentMethod.md) |  |
+**paymentMethod** | [**\Cone\Billingo\Model\PaymentMethod**](PaymentMethod.md) |  |
 **currency** | [**\Cone\Billingo\Model\Currency**](Currency.md) |  |
-**conversion_rate** | **float** |  | [optional]
+**conversionRate** | **float** |  | [optional]
 **electronic** | **bool** |  | [optional] [default to false]
 **items** | [**\Cone\Billingo\Model\ReceiptInsertItemsInner[]**](ReceiptInsertItemsInner.md) |  | [optional]
 
