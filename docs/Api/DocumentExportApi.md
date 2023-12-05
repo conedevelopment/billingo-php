@@ -12,7 +12,7 @@ All URIs are relative to https://api.billingo.hu/v3, except if the operation def
 ## `create()`
 
 ```php
-create($create_document_export): \Cone\Billingo\Model\DocumentExportId
+create($createDocumentExport): \Cone\Billingo\Model\DocumentExportId
 ```
 
 Create document export.
@@ -38,10 +38,10 @@ $apiInstance = new Cone\Billingo\Api\DocumentExportApi(
     new GuzzleHttp\Client(),
     $config
 );
-$create_document_export = new \Cone\Billingo\Model\CreateDocumentExport(); // \Cone\Billingo\Model\CreateDocumentExport | Create document export body.
+$createDocumentExport = new \Cone\Billingo\Model\CreateDocumentExport(); // \Cone\Billingo\Model\CreateDocumentExport | Create document export body.
 
 try {
-    $result = $apiInstance->create($create_document_export);
+    $result = $apiInstance->create($createDocumentExport);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentExportApi->create: ', $e->getMessage(), PHP_EOL;
@@ -52,7 +52,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_document_export** | [**\Cone\Billingo\Model\CreateDocumentExport**](../Model/CreateDocumentExport.md)| Create document export body. | |
+| **createDocumentExport** | [**\Cone\Billingo\Model\CreateDocumentExport**](../Model/CreateDocumentExport.md)| Create document export body. | |
 
 ### Return type
 

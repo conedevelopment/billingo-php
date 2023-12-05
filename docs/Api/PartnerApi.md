@@ -5,7 +5,10 @@ All URIs are relative to https://api.billingo.hu/v3, except if the operation def
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
 | [**createPartner()**](PartnerApi.md#createPartner) | **POST** /partners | Create a partner |
+| [**deletePartner()**](PartnerApi.md#deletePartner) | **DELETE** /partners/{id} | Delete a partner |
+| [**getPartner()**](PartnerApi.md#getPartner) | **GET** /partners/{id} | Retrieve a partner |
 | [**listPartner()**](PartnerApi.md#listPartner) | **GET** /partners | List all partners |
+| [**updatePartner()**](PartnerApi.md#updatePartner) | **PUT** /partners/{id} | Update a partner |
 
 
 ## `createPartner()`
@@ -70,10 +73,133 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `deletePartner()`
+
+```php
+deletePartner($id)
+```
+
+Delete a partner
+
+Delete an existing partner.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = Cone\Billingo\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Cone\Billingo\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+
+
+$apiInstance = new Cone\Billingo\Api\PartnerApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$id = 56; // int
+
+try {
+    $apiInstance->deletePartner($id);
+} catch (Exception $e) {
+    echo 'Exception when calling PartnerApi->deletePartner: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **int**|  | |
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `getPartner()`
+
+```php
+getPartner($id): \Cone\Billingo\Model\Partner
+```
+
+Retrieve a partner
+
+Retrieves the details of an existing partner.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = Cone\Billingo\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Cone\Billingo\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+
+
+$apiInstance = new Cone\Billingo\Api\PartnerApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$id = 56; // int
+
+try {
+    $result = $apiInstance->getPartner($id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling PartnerApi->getPartner: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **int**|  | |
+
+### Return type
+
+[**\Cone\Billingo\Model\Partner**](../Model/Partner.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
 ## `listPartner()`
 
 ```php
-listPartner($page, $per_page, $query): \Cone\Billingo\Model\PartnerList
+listPartner($page, $perPage, $query): \Cone\Billingo\Model\PartnerList
 ```
 
 List all partners
@@ -100,11 +226,11 @@ $apiInstance = new Cone\Billingo\Api\PartnerApi(
     $config
 );
 $page = 56; // int
-$per_page = 25; // int
+$perPage = 25; // int
 $query = 'query_example'; // string
 
 try {
-    $result = $apiInstance->listPartner($page, $per_page, $query);
+    $result = $apiInstance->listPartner($page, $perPage, $query);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling PartnerApi->listPartner: ', $e->getMessage(), PHP_EOL;
@@ -116,7 +242,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **page** | **int**|  | [optional] |
-| **per_page** | **int**|  | [optional] [default to 25] |
+| **perPage** | **int**|  | [optional] [default to 25] |
 | **query** | **string**|  | [optional] |
 
 ### Return type
@@ -130,6 +256,70 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `updatePartner()`
+
+```php
+updatePartner($id, $partner): \Cone\Billingo\Model\Partner
+```
+
+Update a partner
+
+Update an existing partner. Returns a partner object if the update is succeded.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = Cone\Billingo\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Cone\Billingo\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+
+
+$apiInstance = new Cone\Billingo\Api\PartnerApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$id = 56; // int
+$partner = new \Cone\Billingo\Model\Partner(); // \Cone\Billingo\Model\Partner | Partner object that you would like to update.
+
+try {
+    $result = $apiInstance->updatePartner($id, $partner);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling PartnerApi->updatePartner: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **int**|  | |
+| **partner** | [**\Cone\Billingo\Model\Partner**](../Model/Partner.md)| Partner object that you would like to update. | |
+
+### Return type
+
+[**\Cone\Billingo\Model\Partner**](../Model/Partner.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

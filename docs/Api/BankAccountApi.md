@@ -14,7 +14,7 @@ All URIs are relative to https://api.billingo.hu/v3, except if the operation def
 ## `createBankAccount()`
 
 ```php
-createBankAccount($bank_account): \Cone\Billingo\Model\BankAccount
+createBankAccount($bankAccount): \Cone\Billingo\Model\BankAccount
 ```
 
 Create a bank account
@@ -40,10 +40,10 @@ $apiInstance = new Cone\Billingo\Api\BankAccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$bank_account = new \Cone\Billingo\Model\BankAccount(); // \Cone\Billingo\Model\BankAccount | BankAccount object that you would like to store.
+$bankAccount = new \Cone\Billingo\Model\BankAccount(); // \Cone\Billingo\Model\BankAccount | BankAccount object that you would like to store.
 
 try {
-    $result = $apiInstance->createBankAccount($bank_account);
+    $result = $apiInstance->createBankAccount($bankAccount);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BankAccountApi->createBankAccount: ', $e->getMessage(), PHP_EOL;
@@ -54,7 +54,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **bank_account** | [**\Cone\Billingo\Model\BankAccount**](../Model/BankAccount.md)| BankAccount object that you would like to store. | |
+| **bankAccount** | [**\Cone\Billingo\Model\BankAccount**](../Model/BankAccount.md)| BankAccount object that you would like to store. | |
 
 ### Return type
 
@@ -199,7 +199,7 @@ try {
 ## `listBankAccount()`
 
 ```php
-listBankAccount($page, $per_page): \Cone\Billingo\Model\BankAccountList
+listBankAccount($page, $perPage): \Cone\Billingo\Model\BankAccountList
 ```
 
 List all bank account
@@ -226,10 +226,10 @@ $apiInstance = new Cone\Billingo\Api\BankAccountApi(
     $config
 );
 $page = 56; // int
-$per_page = 25; // int
+$perPage = 25; // int
 
 try {
-    $result = $apiInstance->listBankAccount($page, $per_page);
+    $result = $apiInstance->listBankAccount($page, $perPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BankAccountApi->listBankAccount: ', $e->getMessage(), PHP_EOL;
@@ -241,7 +241,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **page** | **int**|  | [optional] |
-| **per_page** | **int**|  | [optional] [default to 25] |
+| **perPage** | **int**|  | [optional] [default to 25] |
 
 ### Return type
 
@@ -263,7 +263,7 @@ try {
 ## `updateBankAccount()`
 
 ```php
-updateBankAccount($id, $bank_account): \Cone\Billingo\Model\BankAccount
+updateBankAccount($id, $bankAccount): \Cone\Billingo\Model\BankAccount
 ```
 
 Update a bank account
@@ -290,10 +290,10 @@ $apiInstance = new Cone\Billingo\Api\BankAccountApi(
     $config
 );
 $id = 56; // int
-$bank_account = new \Cone\Billingo\Model\BankAccount(); // \Cone\Billingo\Model\BankAccount | Bank account object that you would like to update.
+$bankAccount = new \Cone\Billingo\Model\BankAccount(); // \Cone\Billingo\Model\BankAccount | Bank account object that you would like to update.
 
 try {
-    $result = $apiInstance->updateBankAccount($id, $bank_account);
+    $result = $apiInstance->updateBankAccount($id, $bankAccount);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BankAccountApi->updateBankAccount: ', $e->getMessage(), PHP_EOL;
@@ -305,7 +305,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **bank_account** | [**\Cone\Billingo\Model\BankAccount**](../Model/BankAccount.md)| Bank account object that you would like to update. | |
+| **bankAccount** | [**\Cone\Billingo\Model\BankAccount**](../Model/BankAccount.md)| Bank account object that you would like to update. | |
 
 ### Return type
 

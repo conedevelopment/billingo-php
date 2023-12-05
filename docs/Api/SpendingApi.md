@@ -75,7 +75,7 @@ void (empty response body)
 ## `spendingList()`
 
 ```php
-spendingList($q, $page, $per_page, $spending_date, $start_date, $end_date, $payment_status, $spending_type, $categories, $currencies, $payment_methods): \Cone\Billingo\Model\SpendingList
+spendingList($q, $page, $perPage, $spendingDate, $startDate, $endDate, $paymentStatus, $spendingType, $categories, $currencies, $paymentMethods): \Cone\Billingo\Model\SpendingList
 ```
 
 Lists all spending
@@ -103,18 +103,18 @@ $apiInstance = new Cone\Billingo\Api\SpendingApi(
 );
 $q = ''; // string
 $page = 1; // int
-$per_page = 25; // int
-$spending_date = invoice_date; // DateType
-$start_date = 2021-01-01; // string
-$end_date = 2021-01-31; // string
-$payment_status = paid; // PaymentStatusSpending
-$spending_type = manual; // Source
+$perPage = 25; // int
+$spendingDate = invoice_date; // DateType
+$startDate = 2021-01-01; // string
+$endDate = 2021-01-31; // string
+$paymentStatus = paid; // PaymentStatusSpending
+$spendingType = manual; // Source
 $categories = overheads; // Category
 $currencies = HUF; // Currency
-$payment_methods = cash; // PaymentMethod
+$paymentMethods = cash; // PaymentMethod
 
 try {
-    $result = $apiInstance->spendingList($q, $page, $per_page, $spending_date, $start_date, $end_date, $payment_status, $spending_type, $categories, $currencies, $payment_methods);
+    $result = $apiInstance->spendingList($q, $page, $perPage, $spendingDate, $startDate, $endDate, $paymentStatus, $spendingType, $categories, $currencies, $paymentMethods);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SpendingApi->spendingList: ', $e->getMessage(), PHP_EOL;
@@ -127,15 +127,15 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **q** | **string**|  | [optional] [default to &#39;&#39;] |
 | **page** | **int**|  | [optional] [default to 1] |
-| **per_page** | **int**|  | [optional] [default to 25] |
-| **spending_date** | [**DateType**](../Model/.md)|  | [optional] |
-| **start_date** | **string**|  | [optional] |
-| **end_date** | **string**|  | [optional] |
-| **payment_status** | [**PaymentStatusSpending**](../Model/.md)|  | [optional] |
-| **spending_type** | [**Source**](../Model/.md)|  | [optional] |
+| **perPage** | **int**|  | [optional] [default to 25] |
+| **spendingDate** | [**DateType**](../Model/.md)|  | [optional] |
+| **startDate** | **string**|  | [optional] |
+| **endDate** | **string**|  | [optional] |
+| **paymentStatus** | [**PaymentStatusSpending**](../Model/.md)|  | [optional] |
+| **spendingType** | [**Source**](../Model/.md)|  | [optional] |
 | **categories** | [**Category**](../Model/.md)|  | [optional] |
 | **currencies** | [**Currency**](../Model/.md)|  | [optional] |
-| **payment_methods** | [**PaymentMethod**](../Model/.md)|  | [optional] |
+| **paymentMethods** | [**PaymentMethod**](../Model/.md)|  | [optional] |
 
 ### Return type
 
@@ -157,7 +157,7 @@ try {
 ## `spendingSave()`
 
 ```php
-spendingSave($spending_save): \Cone\Billingo\Model\Spending
+spendingSave($spendingSave): \Cone\Billingo\Model\Spending
 ```
 
 Creates a new spending.
@@ -181,10 +181,10 @@ $apiInstance = new Cone\Billingo\Api\SpendingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$spending_save = new \Cone\Billingo\Model\SpendingSave(); // \Cone\Billingo\Model\SpendingSave
+$spendingSave = new \Cone\Billingo\Model\SpendingSave(); // \Cone\Billingo\Model\SpendingSave
 
 try {
-    $result = $apiInstance->spendingSave($spending_save);
+    $result = $apiInstance->spendingSave($spendingSave);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SpendingApi->spendingSave: ', $e->getMessage(), PHP_EOL;
@@ -195,7 +195,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **spending_save** | [**\Cone\Billingo\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional] |
+| **spendingSave** | [**\Cone\Billingo\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional] |
 
 ### Return type
 
@@ -279,7 +279,7 @@ try {
 ## `spendingUpdate()`
 
 ```php
-spendingUpdate($id, $spending_save): \Cone\Billingo\Model\Spending
+spendingUpdate($id, $spendingSave): \Cone\Billingo\Model\Spending
 ```
 
 Updates a spending item.
@@ -306,10 +306,10 @@ $apiInstance = new Cone\Billingo\Api\SpendingApi(
     $config
 );
 $id = 56; // int
-$spending_save = new \Cone\Billingo\Model\SpendingSave(); // \Cone\Billingo\Model\SpendingSave
+$spendingSave = new \Cone\Billingo\Model\SpendingSave(); // \Cone\Billingo\Model\SpendingSave
 
 try {
-    $result = $apiInstance->spendingUpdate($id, $spending_save);
+    $result = $apiInstance->spendingUpdate($id, $spendingSave);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SpendingApi->spendingUpdate: ', $e->getMessage(), PHP_EOL;
@@ -321,7 +321,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**|  | |
-| **spending_save** | [**\Cone\Billingo\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional] |
+| **spendingSave** | [**\Cone\Billingo\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional] |
 
 ### Return type
 
