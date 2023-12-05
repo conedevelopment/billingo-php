@@ -1,7 +1,7 @@
 [files]
 extend-exclude = [
     ".git/",
-    "lib/Model/Country.php",
+    "src/Model/Country.php",
 ]
 ignore-hidden = false
 

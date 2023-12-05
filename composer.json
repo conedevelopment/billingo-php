@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cone\\Billingo\\" : "lib/"
+            "Cone\\Billingo\\" : "src/"
         }
     },
     "autoload-dev": {

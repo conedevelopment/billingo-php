@@ -7,7 +7,7 @@
 /.php-cs-fixer.dist.php export-ignore
 /.typos.toml export-ignore
 /docs/ export-ignore
-/lib/** linguist-generated
-/lib/Billingo.php -linguist-generated
+/src/** linguist-generated
+/src/Billingo.php -linguist-generated
 /phpunit.xml.dist export-ignore
 /test/ export-ignore
