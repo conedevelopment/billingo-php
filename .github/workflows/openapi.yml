@@ -54,7 +54,7 @@ jobs:
                     --input-spec "${{ runner.temp }}/spec.json" \
                     --generator-name php \
                     --output ./ \
-                    --additional-properties 'invokerPackage=Cone\Billingo'
+                    --additional-properties 'invokerPackage=Cone\Billingo,variableNamingConvention=camelCase'
         -
             name: "Check difference to repository"
             id: "list_diff"
