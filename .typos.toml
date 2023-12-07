@@ -17,7 +17,7 @@ extend-ignore-re = [
 "histroy" = "histroy"
 # occurred
 "occured" = "occured"
-# readded
+# read (past tense)
 "readed" = "readed"
 # retrieves
 "retrives" = "retrives"
