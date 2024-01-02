@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -30,36 +29,34 @@
 
 namespace Cone\Billingo\Model;
 
-use ArrayAccess;
-use Cone\Billingo\ObjectSerializer;
+use \ArrayAccess;
+use \Cone\Billingo\ObjectSerializer;
 
 /**
  * Spending Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
- *
  * @implements \ArrayAccess<string, mixed>
  */
-class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
+class Spending implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
     /**
-     * The original name of the model.
-     *
-     * @var string
-     */
+      * The original name of the model.
+      *
+      * @var string
+      */
     protected static $openAPIModelName = 'Spending';
 
     /**
-     * Array of property to type mappings. Used for (de)serialization
-     *
-     * @var string[]
-     */
+      * Array of property to type mappings. Used for (de)serialization
+      *
+      * @var string[]
+      */
     protected static $openAPITypes = [
         'id' => 'int',
         'organizationId' => 'int',
@@ -77,18 +74,16 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         'invoiceDate' => '\DateTime',
         'dueDate' => '\DateTime',
         'paymentMethod' => '\Cone\Billingo\Model\SpendingPaymentMethod',
-        'comment' => 'string',
+        'comment' => 'string'
     ];
 
     /**
-     * Array of property to format mappings. Used for (de)serialization
-     *
-     * @var string[]
-     *
-     * @phpstan-var array<string, string|null>
-     *
-     * @psalm-var array<string, string|null>
-     */
+      * Array of property to format mappings. Used for (de)serialization
+      *
+      * @var string[]
+      * @phpstan-var array<string, string|null>
+      * @psalm-var array<string, string|null>
+      */
     protected static $openAPIFormats = [
         'id' => null,
         'organizationId' => null,
@@ -106,14 +101,14 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         'invoiceDate' => 'date',
         'dueDate' => 'date',
         'paymentMethod' => null,
-        'comment' => null,
+        'comment' => null
     ];
 
     /**
-     * Array of nullable properties. Used for (de)serialization
-     *
-     * @var bool[]
-     */
+      * Array of nullable properties. Used for (de)serialization
+      *
+      * @var boolean[]
+      */
     protected static array $openAPINullables = [
         'id' => false,
         'organizationId' => false,
@@ -131,14 +126,14 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         'invoiceDate' => false,
         'dueDate' => false,
         'paymentMethod' => false,
-        'comment' => true,
+        'comment' => true
     ];
 
     /**
-     * If a nullable field gets set to null, insert it here
-     *
-     * @var bool[]
-     */
+      * If a nullable field gets set to null, insert it here
+      *
+      * @var boolean[]
+      */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -163,6 +158,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Array of nullable properties
+     *
+     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -172,7 +169,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return bool[]
+     * @return boolean[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -182,7 +179,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param  bool[]  $openAPINullablesSetToNull
+     * @param boolean[] $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -191,6 +188,9 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -199,6 +199,9 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -228,7 +231,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         'invoiceDate' => 'invoice_date',
         'dueDate' => 'due_date',
         'paymentMethod' => 'payment_method',
-        'comment' => 'comment',
+        'comment' => 'comment'
     ];
 
     /**
@@ -253,7 +256,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         'invoiceDate' => 'setInvoiceDate',
         'dueDate' => 'setDueDate',
         'paymentMethod' => 'setPaymentMethod',
-        'comment' => 'setComment',
+        'comment' => 'setComment'
     ];
 
     /**
@@ -278,7 +281,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         'invoiceDate' => 'getInvoiceDate',
         'dueDate' => 'getDueDate',
         'paymentMethod' => 'getPaymentMethod',
-        'comment' => 'getComment',
+        'comment' => 'getComment'
     ];
 
     /**
@@ -322,6 +325,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         return self::$openAPIModelName;
     }
 
+
     /**
      * Associative array for storing property values
      *
@@ -332,10 +336,10 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Constructor
      *
-     * @param  mixed[]  $data Associated array of property values
+     * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(?array $data = null)
+    public function __construct(array $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('organizationId', $data ?? [], null);
@@ -357,12 +361,14 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     }
 
     /**
-     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-     * $this->openAPINullablesSetToNull array
-     *
-     * @param  mixed  $defaultValue
-     */
+    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+    * $this->openAPINullablesSetToNull array
+    *
+    * @param string $variableName
+    * @param array  $fields
+    * @param mixed  $defaultValue
+    */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -395,6 +401,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
      * Gets id
      *
@@ -408,7 +415,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets id
      *
-     * @param  int|null  $id id
+     * @param int|null $id id
+     *
      * @return self
      */
     public function setId($id)
@@ -434,7 +442,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets organizationId
      *
-     * @param  int|null  $organizationId organizationId
+     * @param int|null $organizationId organizationId
+     *
      * @return self
      */
     public function setOrganizationId($organizationId)
@@ -460,7 +469,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets category
      *
-     * @param  \Cone\Billingo\Model\Category|null  $category category
+     * @param \Cone\Billingo\Model\Category|null $category category
+     *
      * @return self
      */
     public function setCategory($category)
@@ -486,7 +496,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets paidAt
      *
-     * @param  \DateTime|null  $paidAt paidAt
+     * @param \DateTime|null $paidAt paidAt
+     *
      * @return self
      */
     public function setPaidAt($paidAt)
@@ -496,7 +507,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
             $index = array_search('paidAt', $nullablesSetToNull);
-            if ($index !== false) {
+            if ($index !== FALSE) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -519,7 +530,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets fulfillmentDate
      *
-     * @param  \DateTime|null  $fulfillmentDate fulfillmentDate
+     * @param \DateTime|null $fulfillmentDate fulfillmentDate
+     *
      * @return self
      */
     public function setFulfillmentDate($fulfillmentDate)
@@ -545,7 +557,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets partner
      *
-     * @param  \Cone\Billingo\Model\SpendingPartner|null  $partner partner
+     * @param \Cone\Billingo\Model\SpendingPartner|null $partner partner
+     *
      * @return self
      */
     public function setPartner($partner)
@@ -571,7 +584,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets invoiceNumber
      *
-     * @param  string|null  $invoiceNumber invoiceNumber
+     * @param string|null $invoiceNumber invoiceNumber
+     *
      * @return self
      */
     public function setInvoiceNumber($invoiceNumber)
@@ -597,7 +611,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets currency
      *
-     * @param  \Cone\Billingo\Model\Currency|null  $currency currency
+     * @param \Cone\Billingo\Model\Currency|null $currency currency
+     *
      * @return self
      */
     public function setCurrency($currency)
@@ -623,7 +638,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets conversionRate
      *
-     * @param  float|null  $conversionRate conversionRate
+     * @param float|null $conversionRate conversionRate
+     *
      * @return self
      */
     public function setConversionRate($conversionRate)
@@ -649,7 +665,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets totalGross
      *
-     * @param  float|null  $totalGross totalGross
+     * @param float|null $totalGross totalGross
+     *
      * @return self
      */
     public function setTotalGross($totalGross)
@@ -675,7 +692,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets totalGrossLocal
      *
-     * @param  float|null  $totalGrossLocal totalGrossLocal
+     * @param float|null $totalGrossLocal totalGrossLocal
+     *
      * @return self
      */
     public function setTotalGrossLocal($totalGrossLocal)
@@ -701,7 +719,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets totalVatAmount
      *
-     * @param  float|null  $totalVatAmount totalVatAmount
+     * @param float|null $totalVatAmount totalVatAmount
+     *
      * @return self
      */
     public function setTotalVatAmount($totalVatAmount)
@@ -727,7 +746,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets totalVatAmountLocal
      *
-     * @param  float|null  $totalVatAmountLocal totalVatAmountLocal
+     * @param float|null $totalVatAmountLocal totalVatAmountLocal
+     *
      * @return self
      */
     public function setTotalVatAmountLocal($totalVatAmountLocal)
@@ -753,7 +773,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets invoiceDate
      *
-     * @param  \DateTime|null  $invoiceDate invoiceDate
+     * @param \DateTime|null $invoiceDate invoiceDate
+     *
      * @return self
      */
     public function setInvoiceDate($invoiceDate)
@@ -779,7 +800,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets dueDate
      *
-     * @param  \DateTime|null  $dueDate dueDate
+     * @param \DateTime|null $dueDate dueDate
+     *
      * @return self
      */
     public function setDueDate($dueDate)
@@ -805,7 +827,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets paymentMethod
      *
-     * @param  \Cone\Billingo\Model\SpendingPaymentMethod|null  $paymentMethod paymentMethod
+     * @param \Cone\Billingo\Model\SpendingPaymentMethod|null $paymentMethod paymentMethod
+     *
      * @return self
      */
     public function setPaymentMethod($paymentMethod)
@@ -831,7 +854,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets comment
      *
-     * @param  string|null  $comment comment
+     * @param string|null $comment comment
+     *
      * @return self
      */
     public function setComment($comment)
@@ -841,7 +865,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
             $index = array_search('comment', $nullablesSetToNull);
-            if ($index !== false) {
+            if ($index !== FALSE) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -850,11 +874,12 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return boolean
      */
     public function offsetExists($offset): bool
     {
@@ -864,7 +889,8 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Gets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -876,8 +902,10 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets value based on offset.
      *
-     * @param  int|null  $offset Offset
-     * @param  mixed  $value  Value to be set
+     * @param int|null $offset Offset
+     * @param mixed    $value  Value to be set
+     *
+     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -891,7 +919,9 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Unsets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return void
      */
     public function offsetUnset($offset): void
     {
@@ -900,7 +930,6 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -909,7 +938,7 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+       return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -935,3 +964,5 @@ class Spending implements \JsonSerializable, ArrayAccess, ModelInterface
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

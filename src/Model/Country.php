@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,14 +28,14 @@
  */
 
 namespace Cone\Billingo\Model;
+use \Cone\Billingo\ObjectSerializer;
 
 /**
  * Country Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class Country
@@ -558,7 +557,6 @@ class Country
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -819,7 +817,9 @@ class Country
             self::YT,
             self::ZA,
             self::ZM,
-            self::ZW,
+            self::ZW
         ];
     }
 }
+
+
