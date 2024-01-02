@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,34 +30,36 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * Product Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
+ *
  * @implements \ArrayAccess<string, mixed>
  */
-class Product implements ModelInterface, ArrayAccess, \JsonSerializable
+class Product implements \JsonSerializable, ArrayAccess, ModelInterface
 {
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'Product';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'id' => 'int',
         'name' => 'string',
@@ -67,16 +70,18 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'unit' => 'string',
         'generalLedgerNumber' => 'string',
         'generalLedgerTaxcode' => 'string',
-        'entitlement' => '\Cone\Billingo\Model\Entitlement'
+        'entitlement' => '\Cone\Billingo\Model\Entitlement',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     *
+     * @phpstan-var array<string, string|null>
+     *
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'id' => null,
         'name' => null,
@@ -87,14 +92,14 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'unit' => null,
         'generalLedgerNumber' => null,
         'generalLedgerTaxcode' => null,
-        'entitlement' => null
+        'entitlement' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var bool[]
+     */
     protected static array $openAPINullables = [
         'id' => false,
         'name' => false,
@@ -105,14 +110,14 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'unit' => false,
         'generalLedgerNumber' => false,
         'generalLedgerTaxcode' => false,
-        'entitlement' => false
+        'entitlement' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var bool[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -137,8 +142,6 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Array of nullable properties
-     *
-     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -148,7 +151,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return boolean[]
+     * @return bool[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -158,7 +161,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param boolean[] $openAPINullablesSetToNull
+     * @param  bool[]  $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -167,9 +170,6 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Checks if a property is nullable
-     *
-     * @param string $property
-     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -178,9 +178,6 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Checks if a nullable property is set to null.
-     *
-     * @param string $property
-     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -203,7 +200,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'unit' => 'unit',
         'generalLedgerNumber' => 'general_ledger_number',
         'generalLedgerTaxcode' => 'general_ledger_taxcode',
-        'entitlement' => 'entitlement'
+        'entitlement' => 'entitlement',
     ];
 
     /**
@@ -221,7 +218,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'unit' => 'setUnit',
         'generalLedgerNumber' => 'setGeneralLedgerNumber',
         'generalLedgerTaxcode' => 'setGeneralLedgerTaxcode',
-        'entitlement' => 'setEntitlement'
+        'entitlement' => 'setEntitlement',
     ];
 
     /**
@@ -239,7 +236,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'unit' => 'getUnit',
         'generalLedgerNumber' => 'getGeneralLedgerNumber',
         'generalLedgerTaxcode' => 'getGeneralLedgerTaxcode',
-        'entitlement' => 'getEntitlement'
+        'entitlement' => 'getEntitlement',
     ];
 
     /**
@@ -283,7 +280,6 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-
     /**
      * Associative array for storing property values
      *
@@ -294,10 +290,10 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Constructor
      *
-     * @param mixed[] $data Associated array of property values
+     * @param  mixed[]  $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('name', $data ?? [], null);
@@ -312,14 +308,12 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param  mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -350,6 +344,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['unit'] === null) {
             $invalidProperties[] = "'unit' can't be null";
         }
+
         return $invalidProperties;
     }
 
@@ -364,7 +359,6 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
      * Gets id
      *
@@ -378,8 +372,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets id
      *
-     * @param int|null $id id
-     *
+     * @param  int|null  $id id
      * @return self
      */
     public function setId($id)
@@ -405,8 +398,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets name
      *
-     * @param string $name name
-     *
+     * @param  string  $name name
      * @return self
      */
     public function setName($name)
@@ -432,8 +424,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets comment
      *
-     * @param string|null $comment comment
-     *
+     * @param  string|null  $comment comment
      * @return self
      */
     public function setComment($comment)
@@ -459,8 +450,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets currency
      *
-     * @param \Cone\Billingo\Model\Currency $currency currency
-     *
+     * @param  \Cone\Billingo\Model\Currency  $currency currency
      * @return self
      */
     public function setCurrency($currency)
@@ -486,8 +476,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets vat
      *
-     * @param \Cone\Billingo\Model\Vat $vat vat
-     *
+     * @param  \Cone\Billingo\Model\Vat  $vat vat
      * @return self
      */
     public function setVat($vat)
@@ -513,8 +502,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets netUnitPrice
      *
-     * @param float|null $netUnitPrice netUnitPrice
-     *
+     * @param  float|null  $netUnitPrice netUnitPrice
      * @return self
      */
     public function setNetUnitPrice($netUnitPrice)
@@ -540,8 +528,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit
      *
-     * @param string $unit unit
-     *
+     * @param  string  $unit unit
      * @return self
      */
     public function setUnit($unit)
@@ -567,8 +554,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets generalLedgerNumber
      *
-     * @param string|null $generalLedgerNumber generalLedgerNumber
-     *
+     * @param  string|null  $generalLedgerNumber generalLedgerNumber
      * @return self
      */
     public function setGeneralLedgerNumber($generalLedgerNumber)
@@ -594,8 +580,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets generalLedgerTaxcode
      *
-     * @param string|null $generalLedgerTaxcode generalLedgerTaxcode
-     *
+     * @param  string|null  $generalLedgerTaxcode generalLedgerTaxcode
      * @return self
      */
     public function setGeneralLedgerTaxcode($generalLedgerTaxcode)
@@ -621,8 +606,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets entitlement
      *
-     * @param \Cone\Billingo\Model\Entitlement|null $entitlement entitlement
-     *
+     * @param  \Cone\Billingo\Model\Entitlement|null  $entitlement entitlement
      * @return self
      */
     public function setEntitlement($entitlement)
@@ -634,12 +618,11 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param integer $offset Offset
-     *
-     * @return boolean
+     * @param  int  $offset Offset
      */
     public function offsetExists($offset): bool
     {
@@ -649,8 +632,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offset.
      *
-     * @param integer $offset Offset
-     *
+     * @param  int  $offset Offset
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -662,10 +644,8 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value based on offset.
      *
-     * @param int|null $offset Offset
-     * @param mixed    $value  Value to be set
-     *
-     * @return void
+     * @param  int|null  $offset Offset
+     * @param  mixed  $value  Value to be set
      */
     public function offsetSet($offset, $value): void
     {
@@ -679,9 +659,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Unsets offset.
      *
-     * @param integer $offset Offset
-     *
-     * @return void
+     * @param  int  $offset Offset
      */
     public function offsetUnset($offset): void
     {
@@ -690,6 +668,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
+     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -698,7 +677,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -724,5 +703,3 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

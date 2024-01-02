@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -28,14 +29,14 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
 
 /**
  * Vat Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 class Vat
@@ -129,6 +130,7 @@ class Vat
 
     /**
      * Gets allowable values of the enum
+     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -175,9 +177,7 @@ class Vat
             self::MAA,
             self::TAM,
             self::KK,
-            self::THK
+            self::THK,
         ];
     }
 }
-
-

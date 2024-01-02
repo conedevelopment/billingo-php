@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -28,14 +29,14 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
 
 /**
  * DateType Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 class DateType
@@ -51,6 +52,7 @@ class DateType
 
     /**
      * Gets allowable values of the enum
+     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -58,9 +60,7 @@ class DateType
         return [
             self::DUE_DATE,
             self::FULFILLMENT_DATE,
-            self::INVOICE_DATE
+            self::INVOICE_DATE,
         ];
     }
 }
-
-

@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,75 +30,79 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * ModificationDocumentInsert Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
+ *
  * @implements \ArrayAccess<string, mixed>
  */
-class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSerializable
+class ModificationDocumentInsert implements \JsonSerializable, ArrayAccess, ModelInterface
 {
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'ModificationDocumentInsert';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'dueDate' => '\DateTime',
         'comment' => 'string',
         'paymentMethod' => '\Cone\Billingo\Model\PaymentMethod',
         'withoutFinancialFulfillment' => 'bool',
-        'items' => '\Cone\Billingo\Model\DocumentInsertItemsInner[]'
+        'items' => '\Cone\Billingo\Model\DocumentInsertItemsInner[]',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     *
+     * @phpstan-var array<string, string|null>
+     *
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'dueDate' => 'date',
         'comment' => null,
         'paymentMethod' => null,
         'withoutFinancialFulfillment' => null,
-        'items' => null
+        'items' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var bool[]
+     */
     protected static array $openAPINullables = [
         'dueDate' => false,
         'comment' => false,
         'paymentMethod' => false,
         'withoutFinancialFulfillment' => false,
-        'items' => false
+        'items' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var bool[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -122,8 +127,6 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
 
     /**
      * Array of nullable properties
-     *
-     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -133,7 +136,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return boolean[]
+     * @return bool[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -143,7 +146,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param boolean[] $openAPINullablesSetToNull
+     * @param  bool[]  $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -152,9 +155,6 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
 
     /**
      * Checks if a property is nullable
-     *
-     * @param string $property
-     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -163,9 +163,6 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
 
     /**
      * Checks if a nullable property is set to null.
-     *
-     * @param string $property
-     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -183,7 +180,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
         'comment' => 'comment',
         'paymentMethod' => 'payment_method',
         'withoutFinancialFulfillment' => 'without_financial_fulfillment',
-        'items' => 'items'
+        'items' => 'items',
     ];
 
     /**
@@ -196,7 +193,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
         'comment' => 'setComment',
         'paymentMethod' => 'setPaymentMethod',
         'withoutFinancialFulfillment' => 'setWithoutFinancialFulfillment',
-        'items' => 'setItems'
+        'items' => 'setItems',
     ];
 
     /**
@@ -209,7 +206,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
         'comment' => 'getComment',
         'paymentMethod' => 'getPaymentMethod',
         'withoutFinancialFulfillment' => 'getWithoutFinancialFulfillment',
-        'items' => 'getItems'
+        'items' => 'getItems',
     ];
 
     /**
@@ -253,7 +250,6 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
         return self::$openAPIModelName;
     }
 
-
     /**
      * Associative array for storing property values
      *
@@ -264,10 +260,10 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Constructor
      *
-     * @param mixed[] $data Associated array of property values
+     * @param  mixed[]  $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('dueDate', $data ?? [], null);
         $this->setIfExists('comment', $data ?? [], null);
@@ -277,14 +273,12 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param  mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -317,7 +311,6 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
      * Gets dueDate
      *
@@ -331,8 +324,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets dueDate
      *
-     * @param \DateTime|null $dueDate dueDate
-     *
+     * @param  \DateTime|null  $dueDate dueDate
      * @return self
      */
     public function setDueDate($dueDate)
@@ -358,8 +350,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets comment
      *
-     * @param string|null $comment comment
-     *
+     * @param  string|null  $comment comment
      * @return self
      */
     public function setComment($comment)
@@ -385,8 +376,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets paymentMethod
      *
-     * @param \Cone\Billingo\Model\PaymentMethod|null $paymentMethod paymentMethod
-     *
+     * @param  \Cone\Billingo\Model\PaymentMethod|null  $paymentMethod paymentMethod
      * @return self
      */
     public function setPaymentMethod($paymentMethod)
@@ -412,8 +402,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets withoutFinancialFulfillment
      *
-     * @param bool|null $withoutFinancialFulfillment withoutFinancialFulfillment
-     *
+     * @param  bool|null  $withoutFinancialFulfillment withoutFinancialFulfillment
      * @return self
      */
     public function setWithoutFinancialFulfillment($withoutFinancialFulfillment)
@@ -439,8 +428,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets items
      *
-     * @param \Cone\Billingo\Model\DocumentInsertItemsInner[]|null $items items
-     *
+     * @param  \Cone\Billingo\Model\DocumentInsertItemsInner[]|null  $items items
      * @return self
      */
     public function setItems($items)
@@ -452,12 +440,11 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param integer $offset Offset
-     *
-     * @return boolean
+     * @param  int  $offset Offset
      */
     public function offsetExists($offset): bool
     {
@@ -467,8 +454,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets offset.
      *
-     * @param integer $offset Offset
-     *
+     * @param  int  $offset Offset
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -480,10 +466,8 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets value based on offset.
      *
-     * @param int|null $offset Offset
-     * @param mixed    $value  Value to be set
-     *
-     * @return void
+     * @param  int|null  $offset Offset
+     * @param  mixed  $value  Value to be set
      */
     public function offsetSet($offset, $value): void
     {
@@ -497,9 +481,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Unsets offset.
      *
-     * @param integer $offset Offset
-     *
-     * @return void
+     * @param  int  $offset Offset
      */
     public function offsetUnset($offset): void
     {
@@ -508,6 +490,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
+     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -516,7 +499,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -542,5 +525,3 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess, \JsonSe
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

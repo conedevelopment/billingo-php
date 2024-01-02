@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,34 +30,36 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentInsertItemsInner Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
+ *
  * @implements \ArrayAccess<string, mixed>
  */
-class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSerializable
+class DocumentInsertItemsInner implements \JsonSerializable, ArrayAccess, ModelInterface
 {
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'DocumentInsert_items_inner';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'productId' => 'int',
         'quantity' => 'float',
@@ -66,16 +69,18 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         'unitPriceType' => '\Cone\Billingo\Model\UnitPriceType',
         'unit' => 'string',
         'vat' => '\Cone\Billingo\Model\Vat',
-        'entitlement' => '\Cone\Billingo\Model\Entitlement'
+        'entitlement' => '\Cone\Billingo\Model\Entitlement',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     *
+     * @phpstan-var array<string, string|null>
+     *
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'productId' => null,
         'quantity' => 'float',
@@ -85,14 +90,14 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         'unitPriceType' => null,
         'unit' => null,
         'vat' => null,
-        'entitlement' => null
+        'entitlement' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var bool[]
+     */
     protected static array $openAPINullables = [
         'productId' => false,
         'quantity' => false,
@@ -102,14 +107,14 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         'unitPriceType' => false,
         'unit' => false,
         'vat' => false,
-        'entitlement' => false
+        'entitlement' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var bool[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -134,8 +139,6 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
 
     /**
      * Array of nullable properties
-     *
-     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -145,7 +148,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return boolean[]
+     * @return bool[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -155,7 +158,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param boolean[] $openAPINullablesSetToNull
+     * @param  bool[]  $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -164,9 +167,6 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
 
     /**
      * Checks if a property is nullable
-     *
-     * @param string $property
-     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -175,9 +175,6 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
 
     /**
      * Checks if a nullable property is set to null.
-     *
-     * @param string $property
-     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -199,7 +196,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         'unitPriceType' => 'unit_price_type',
         'unit' => 'unit',
         'vat' => 'vat',
-        'entitlement' => 'entitlement'
+        'entitlement' => 'entitlement',
     ];
 
     /**
@@ -216,7 +213,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         'unitPriceType' => 'setUnitPriceType',
         'unit' => 'setUnit',
         'vat' => 'setVat',
-        'entitlement' => 'setEntitlement'
+        'entitlement' => 'setEntitlement',
     ];
 
     /**
@@ -233,7 +230,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         'unitPriceType' => 'getUnitPriceType',
         'unit' => 'getUnit',
         'vat' => 'getVat',
-        'entitlement' => 'getEntitlement'
+        'entitlement' => 'getEntitlement',
     ];
 
     /**
@@ -277,7 +274,6 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         return self::$openAPIModelName;
     }
 
-
     /**
      * Associative array for storing property values
      *
@@ -288,10 +284,10 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Constructor
      *
-     * @param mixed[] $data Associated array of property values
+     * @param  mixed[]  $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('productId', $data ?? [], null);
         $this->setIfExists('quantity', $data ?? [], null);
@@ -305,14 +301,12 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param  mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -352,6 +346,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         if ($this->container['vat'] === null) {
             $invalidProperties[] = "'vat' can't be null";
         }
+
         return $invalidProperties;
     }
 
@@ -366,7 +361,6 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
      * Gets productId
      *
@@ -380,8 +374,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets productId
      *
-     * @param int $productId productId
-     *
+     * @param  int  $productId productId
      * @return self
      */
     public function setProductId($productId)
@@ -407,8 +400,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets quantity
      *
-     * @param float $quantity quantity
-     *
+     * @param  float  $quantity quantity
      * @return self
      */
     public function setQuantity($quantity)
@@ -434,8 +426,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets comment
      *
-     * @param string|null $comment comment
-     *
+     * @param  string|null  $comment comment
      * @return self
      */
     public function setComment($comment)
@@ -461,8 +452,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets name
      *
-     * @param string $name name
-     *
+     * @param  string  $name name
      * @return self
      */
     public function setName($name)
@@ -488,8 +478,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets unitPrice
      *
-     * @param float $unitPrice unitPrice
-     *
+     * @param  float  $unitPrice unitPrice
      * @return self
      */
     public function setUnitPrice($unitPrice)
@@ -515,8 +504,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets unitPriceType
      *
-     * @param \Cone\Billingo\Model\UnitPriceType $unitPriceType unitPriceType
-     *
+     * @param  \Cone\Billingo\Model\UnitPriceType  $unitPriceType unitPriceType
      * @return self
      */
     public function setUnitPriceType($unitPriceType)
@@ -542,8 +530,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets unit
      *
-     * @param string $unit unit
-     *
+     * @param  string  $unit unit
      * @return self
      */
     public function setUnit($unit)
@@ -569,8 +556,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets vat
      *
-     * @param \Cone\Billingo\Model\Vat $vat vat
-     *
+     * @param  \Cone\Billingo\Model\Vat  $vat vat
      * @return self
      */
     public function setVat($vat)
@@ -596,8 +582,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets entitlement
      *
-     * @param \Cone\Billingo\Model\Entitlement|null $entitlement entitlement
-     *
+     * @param  \Cone\Billingo\Model\Entitlement|null  $entitlement entitlement
      * @return self
      */
     public function setEntitlement($entitlement)
@@ -609,12 +594,11 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param integer $offset Offset
-     *
-     * @return boolean
+     * @param  int  $offset Offset
      */
     public function offsetExists($offset): bool
     {
@@ -624,8 +608,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets offset.
      *
-     * @param integer $offset Offset
-     *
+     * @param  int  $offset Offset
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -637,10 +620,8 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets value based on offset.
      *
-     * @param int|null $offset Offset
-     * @param mixed    $value  Value to be set
-     *
-     * @return void
+     * @param  int|null  $offset Offset
+     * @param  mixed  $value  Value to be set
      */
     public function offsetSet($offset, $value): void
     {
@@ -654,9 +635,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Unsets offset.
      *
-     * @param integer $offset Offset
-     *
-     * @return void
+     * @param  int  $offset Offset
      */
     public function offsetUnset($offset): void
     {
@@ -665,6 +644,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
+     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -673,7 +653,7 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -699,5 +679,3 @@ class DocumentInsertItemsInner implements ModelInterface, ArrayAccess, \JsonSeri
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,34 +30,36 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentProductData Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
+ *
  * @implements \ArrayAccess<string, mixed>
  */
-class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializable
+class DocumentProductData implements \JsonSerializable, ArrayAccess, ModelInterface
 {
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'DocumentProductData';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'name' => 'string',
         'unitPrice' => 'float',
@@ -65,16 +68,18 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         'unit' => 'string',
         'vat' => '\Cone\Billingo\Model\Vat',
         'comment' => 'string',
-        'entitlement' => '\Cone\Billingo\Model\Entitlement'
+        'entitlement' => '\Cone\Billingo\Model\Entitlement',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     *
+     * @phpstan-var array<string, string|null>
+     *
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'name' => null,
         'unitPrice' => 'float',
@@ -83,14 +88,14 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         'unit' => null,
         'vat' => null,
         'comment' => null,
-        'entitlement' => null
+        'entitlement' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var bool[]
+     */
     protected static array $openAPINullables = [
         'name' => false,
         'unitPrice' => false,
@@ -99,14 +104,14 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         'unit' => false,
         'vat' => false,
         'comment' => false,
-        'entitlement' => false
+        'entitlement' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var bool[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -131,8 +136,6 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Array of nullable properties
-     *
-     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -142,7 +145,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return boolean[]
+     * @return bool[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -152,7 +155,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param boolean[] $openAPINullablesSetToNull
+     * @param  bool[]  $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -161,9 +164,6 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Checks if a property is nullable
-     *
-     * @param string $property
-     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -172,9 +172,6 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Checks if a nullable property is set to null.
-     *
-     * @param string $property
-     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -195,7 +192,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         'unit' => 'unit',
         'vat' => 'vat',
         'comment' => 'comment',
-        'entitlement' => 'entitlement'
+        'entitlement' => 'entitlement',
     ];
 
     /**
@@ -211,7 +208,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         'unit' => 'setUnit',
         'vat' => 'setVat',
         'comment' => 'setComment',
-        'entitlement' => 'setEntitlement'
+        'entitlement' => 'setEntitlement',
     ];
 
     /**
@@ -227,7 +224,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         'unit' => 'getUnit',
         'vat' => 'getVat',
         'comment' => 'getComment',
-        'entitlement' => 'getEntitlement'
+        'entitlement' => 'getEntitlement',
     ];
 
     /**
@@ -271,7 +268,6 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         return self::$openAPIModelName;
     }
 
-
     /**
      * Associative array for storing property values
      *
@@ -282,10 +278,10 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Constructor
      *
-     * @param mixed[] $data Associated array of property values
+     * @param  mixed[]  $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('name', $data ?? [], null);
         $this->setIfExists('unitPrice', $data ?? [], null);
@@ -298,14 +294,12 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param  mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -342,6 +336,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         if ($this->container['vat'] === null) {
             $invalidProperties[] = "'vat' can't be null";
         }
+
         return $invalidProperties;
     }
 
@@ -356,7 +351,6 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
      * Gets name
      *
@@ -370,8 +364,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets name
      *
-     * @param string $name name
-     *
+     * @param  string  $name name
      * @return self
      */
     public function setName($name)
@@ -397,8 +390,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets unitPrice
      *
-     * @param float $unitPrice unitPrice
-     *
+     * @param  float  $unitPrice unitPrice
      * @return self
      */
     public function setUnitPrice($unitPrice)
@@ -424,8 +416,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets unitPriceType
      *
-     * @param \Cone\Billingo\Model\UnitPriceType $unitPriceType unitPriceType
-     *
+     * @param  \Cone\Billingo\Model\UnitPriceType  $unitPriceType unitPriceType
      * @return self
      */
     public function setUnitPriceType($unitPriceType)
@@ -451,8 +442,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets quantity
      *
-     * @param float $quantity quantity
-     *
+     * @param  float  $quantity quantity
      * @return self
      */
     public function setQuantity($quantity)
@@ -478,8 +468,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets unit
      *
-     * @param string $unit unit
-     *
+     * @param  string  $unit unit
      * @return self
      */
     public function setUnit($unit)
@@ -505,8 +494,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets vat
      *
-     * @param \Cone\Billingo\Model\Vat $vat vat
-     *
+     * @param  \Cone\Billingo\Model\Vat  $vat vat
      * @return self
      */
     public function setVat($vat)
@@ -532,8 +520,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets comment
      *
-     * @param string|null $comment comment
-     *
+     * @param  string|null  $comment comment
      * @return self
      */
     public function setComment($comment)
@@ -559,8 +546,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets entitlement
      *
-     * @param \Cone\Billingo\Model\Entitlement|null $entitlement entitlement
-     *
+     * @param  \Cone\Billingo\Model\Entitlement|null  $entitlement entitlement
      * @return self
      */
     public function setEntitlement($entitlement)
@@ -572,12 +558,11 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param integer $offset Offset
-     *
-     * @return boolean
+     * @param  int  $offset Offset
      */
     public function offsetExists($offset): bool
     {
@@ -587,8 +572,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets offset.
      *
-     * @param integer $offset Offset
-     *
+     * @param  int  $offset Offset
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -600,10 +584,8 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets value based on offset.
      *
-     * @param int|null $offset Offset
-     * @param mixed    $value  Value to be set
-     *
-     * @return void
+     * @param  int|null  $offset Offset
+     * @param  mixed  $value  Value to be set
      */
     public function offsetSet($offset, $value): void
     {
@@ -617,9 +599,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Unsets offset.
      *
-     * @param integer $offset Offset
-     *
-     * @return void
+     * @param  int  $offset Offset
      */
     public function offsetUnset($offset): void
     {
@@ -628,6 +608,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
+     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -636,7 +617,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -662,5 +643,3 @@ class DocumentProductData implements ModelInterface, ArrayAccess, \JsonSerializa
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

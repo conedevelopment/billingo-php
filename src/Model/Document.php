@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,35 +30,38 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * Document Class Doc Comment
  *
  * @category Class
+ *
  * @description Document object representing your invoice. NOTE: partner property is deprecated. Please use document_partner instead.
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
+ *
  * @implements \ArrayAccess<string, mixed>
  */
-class Document implements ModelInterface, ArrayAccess, \JsonSerializable
+class Document implements \JsonSerializable, ArrayAccess, ModelInterface
 {
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'Document';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'id' => 'int',
         'invoiceNumber' => 'string',
@@ -87,16 +91,18 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         'onlineSzamlaStatus' => '\Cone\Billingo\Model\OnlineSzamlaStatusEnum',
         'relatedDocuments' => '\Cone\Billingo\Model\DocumentAncestor[]',
         'discount' => '\Cone\Billingo\Model\Discount',
-        'correctionType' => '\Cone\Billingo\Model\CorrectionType'
+        'correctionType' => '\Cone\Billingo\Model\CorrectionType',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     *
+     * @phpstan-var array<string, string|null>
+     *
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'id' => null,
         'invoiceNumber' => null,
@@ -126,14 +132,14 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         'onlineSzamlaStatus' => null,
         'relatedDocuments' => null,
         'discount' => null,
-        'correctionType' => null
+        'correctionType' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var bool[]
+     */
     protected static array $openAPINullables = [
         'id' => false,
         'invoiceNumber' => false,
@@ -163,14 +169,14 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         'onlineSzamlaStatus' => false,
         'relatedDocuments' => false,
         'discount' => false,
-        'correctionType' => false
+        'correctionType' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var bool[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -195,8 +201,6 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Array of nullable properties
-     *
-     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -206,7 +210,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return boolean[]
+     * @return bool[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -216,7 +220,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param boolean[] $openAPINullablesSetToNull
+     * @param  bool[]  $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -225,9 +229,6 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Checks if a property is nullable
-     *
-     * @param string $property
-     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -236,9 +237,6 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Checks if a nullable property is set to null.
-     *
-     * @param string $property
-     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -280,7 +278,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         'onlineSzamlaStatus' => 'online_szamla_status',
         'relatedDocuments' => 'related_documents',
         'discount' => 'discount',
-        'correctionType' => 'correction_type'
+        'correctionType' => 'correction_type',
     ];
 
     /**
@@ -317,7 +315,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         'onlineSzamlaStatus' => 'setOnlineSzamlaStatus',
         'relatedDocuments' => 'setRelatedDocuments',
         'discount' => 'setDiscount',
-        'correctionType' => 'setCorrectionType'
+        'correctionType' => 'setCorrectionType',
     ];
 
     /**
@@ -354,7 +352,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         'onlineSzamlaStatus' => 'getOnlineSzamlaStatus',
         'relatedDocuments' => 'getRelatedDocuments',
         'discount' => 'getDiscount',
-        'correctionType' => 'getCorrectionType'
+        'correctionType' => 'getCorrectionType',
     ];
 
     /**
@@ -398,7 +396,6 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-
     /**
      * Associative array for storing property values
      *
@@ -409,10 +406,10 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Constructor
      *
-     * @param mixed[] $data Associated array of property values
+     * @param  mixed[]  $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('invoiceNumber', $data ?? [], null);
@@ -446,14 +443,12 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param  mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -486,7 +481,6 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
      * Gets id
      *
@@ -500,8 +494,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets id
      *
-     * @param int|null $id The document's unique identifier.
-     *
+     * @param  int|null  $id The document's unique identifier.
      * @return self
      */
     public function setId($id)
@@ -527,8 +520,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoiceNumber
      *
-     * @param string|null $invoiceNumber The document's invoice number.
-     *
+     * @param  string|null  $invoiceNumber The document's invoice number.
      * @return self
      */
     public function setInvoiceNumber($invoiceNumber)
@@ -554,8 +546,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \Cone\Billingo\Model\DocumentType|null $type type
-     *
+     * @param  \Cone\Billingo\Model\DocumentType|null  $type type
      * @return self
      */
     public function setType($type)
@@ -581,8 +572,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets cancelled
      *
-     * @param bool|null $cancelled cancelled
-     *
+     * @param  bool|null  $cancelled cancelled
      * @return self
      */
     public function setCancelled($cancelled)
@@ -608,8 +598,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets blockId
      *
-     * @param int|null $blockId DocumentBlock's identifier.
-     *
+     * @param  int|null  $blockId DocumentBlock's identifier.
      * @return self
      */
     public function setBlockId($blockId)
@@ -635,8 +624,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets paymentStatus
      *
-     * @param \Cone\Billingo\Model\PaymentStatus|null $paymentStatus paymentStatus
-     *
+     * @param  \Cone\Billingo\Model\PaymentStatus|null  $paymentStatus paymentStatus
      * @return self
      */
     public function setPaymentStatus($paymentStatus)
@@ -662,8 +650,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets paymentMethod
      *
-     * @param \Cone\Billingo\Model\PaymentMethod|null $paymentMethod paymentMethod
-     *
+     * @param  \Cone\Billingo\Model\PaymentMethod|null  $paymentMethod paymentMethod
      * @return self
      */
     public function setPaymentMethod($paymentMethod)
@@ -689,8 +676,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets grossTotal
      *
-     * @param float|null $grossTotal The document's gross total price.
-     *
+     * @param  float|null  $grossTotal The document's gross total price.
      * @return self
      */
     public function setGrossTotal($grossTotal)
@@ -716,8 +702,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets currency
      *
-     * @param \Cone\Billingo\Model\Currency|null $currency currency
-     *
+     * @param  \Cone\Billingo\Model\Currency|null  $currency currency
      * @return self
      */
     public function setCurrency($currency)
@@ -743,8 +728,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets conversionRate
      *
-     * @param float|null $conversionRate conversionRate
-     *
+     * @param  float|null  $conversionRate conversionRate
      * @return self
      */
     public function setConversionRate($conversionRate)
@@ -770,8 +754,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoiceDate
      *
-     * @param \DateTime|null $invoiceDate invoiceDate
-     *
+     * @param  \DateTime|null  $invoiceDate invoiceDate
      * @return self
      */
     public function setInvoiceDate($invoiceDate)
@@ -797,8 +780,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fulfillmentDate
      *
-     * @param \DateTime|null $fulfillmentDate fulfillmentDate
-     *
+     * @param  \DateTime|null  $fulfillmentDate fulfillmentDate
      * @return self
      */
     public function setFulfillmentDate($fulfillmentDate)
@@ -824,8 +806,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets dueDate
      *
-     * @param \DateTime|null $dueDate dueDate
-     *
+     * @param  \DateTime|null  $dueDate dueDate
      * @return self
      */
     public function setDueDate($dueDate)
@@ -851,8 +832,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets paidDate
      *
-     * @param \DateTime|null $paidDate paidDate
-     *
+     * @param  \DateTime|null  $paidDate paidDate
      * @return self
      */
     public function setPaidDate($paidDate)
@@ -878,8 +858,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets organization
      *
-     * @param \Cone\Billingo\Model\DocumentOrganization|null $organization organization
-     *
+     * @param  \Cone\Billingo\Model\DocumentOrganization|null  $organization organization
      * @return self
      */
     public function setOrganization($organization)
@@ -905,8 +884,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets partner
      *
-     * @param \Cone\Billingo\Model\Partner|null $partner partner
-     *
+     * @param  \Cone\Billingo\Model\Partner|null  $partner partner
      * @return self
      */
     public function setPartner($partner)
@@ -932,8 +910,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets documentPartner
      *
-     * @param \Cone\Billingo\Model\DocumentPartner|null $documentPartner documentPartner
-     *
+     * @param  \Cone\Billingo\Model\DocumentPartner|null  $documentPartner documentPartner
      * @return self
      */
     public function setDocumentPartner($documentPartner)
@@ -959,8 +936,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets electronic
      *
-     * @param bool|null $electronic electronic
-     *
+     * @param  bool|null  $electronic electronic
      * @return self
      */
     public function setElectronic($electronic)
@@ -986,8 +962,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets comment
      *
-     * @param string|null $comment comment
-     *
+     * @param  string|null  $comment comment
      * @return self
      */
     public function setComment($comment)
@@ -1013,8 +988,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tags
      *
-     * @param string[]|null $tags tags
-     *
+     * @param  string[]|null  $tags tags
      * @return self
      */
     public function setTags($tags)
@@ -1040,8 +1014,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets notificationStatus
      *
-     * @param \Cone\Billingo\Model\DocumentNotificationStatus|null $notificationStatus notificationStatus
-     *
+     * @param  \Cone\Billingo\Model\DocumentNotificationStatus|null  $notificationStatus notificationStatus
      * @return self
      */
     public function setNotificationStatus($notificationStatus)
@@ -1067,8 +1040,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets language
      *
-     * @param \Cone\Billingo\Model\DocumentLanguage|null $language language
-     *
+     * @param  \Cone\Billingo\Model\DocumentLanguage|null  $language language
      * @return self
      */
     public function setLanguage($language)
@@ -1094,8 +1066,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Cone\Billingo\Model\DocumentItem[]|null $items items
-     *
+     * @param  \Cone\Billingo\Model\DocumentItem[]|null  $items items
      * @return self
      */
     public function setItems($items)
@@ -1121,8 +1092,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets summary
      *
-     * @param \Cone\Billingo\Model\DocumentSummary|null $summary summary
-     *
+     * @param  \Cone\Billingo\Model\DocumentSummary|null  $summary summary
      * @return self
      */
     public function setSummary($summary)
@@ -1148,8 +1118,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets settings
      *
-     * @param \Cone\Billingo\Model\DocumentSettings|null $settings settings
-     *
+     * @param  \Cone\Billingo\Model\DocumentSettings|null  $settings settings
      * @return self
      */
     public function setSettings($settings)
@@ -1175,8 +1144,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets onlineSzamlaStatus
      *
-     * @param \Cone\Billingo\Model\OnlineSzamlaStatusEnum|null $onlineSzamlaStatus onlineSzamlaStatus
-     *
+     * @param  \Cone\Billingo\Model\OnlineSzamlaStatusEnum|null  $onlineSzamlaStatus onlineSzamlaStatus
      * @return self
      */
     public function setOnlineSzamlaStatus($onlineSzamlaStatus)
@@ -1202,8 +1170,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets relatedDocuments
      *
-     * @param \Cone\Billingo\Model\DocumentAncestor[]|null $relatedDocuments relatedDocuments
-     *
+     * @param  \Cone\Billingo\Model\DocumentAncestor[]|null  $relatedDocuments relatedDocuments
      * @return self
      */
     public function setRelatedDocuments($relatedDocuments)
@@ -1229,8 +1196,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount
      *
-     * @param \Cone\Billingo\Model\Discount|null $discount discount
-     *
+     * @param  \Cone\Billingo\Model\Discount|null  $discount discount
      * @return self
      */
     public function setDiscount($discount)
@@ -1256,8 +1222,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets correctionType
      *
-     * @param \Cone\Billingo\Model\CorrectionType|null $correctionType correctionType
-     *
+     * @param  \Cone\Billingo\Model\CorrectionType|null  $correctionType correctionType
      * @return self
      */
     public function setCorrectionType($correctionType)
@@ -1269,12 +1234,11 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param integer $offset Offset
-     *
-     * @return boolean
+     * @param  int  $offset Offset
      */
     public function offsetExists($offset): bool
     {
@@ -1284,8 +1248,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offset.
      *
-     * @param integer $offset Offset
-     *
+     * @param  int  $offset Offset
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -1297,10 +1260,8 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value based on offset.
      *
-     * @param int|null $offset Offset
-     * @param mixed    $value  Value to be set
-     *
-     * @return void
+     * @param  int|null  $offset Offset
+     * @param  mixed  $value  Value to be set
      */
     public function offsetSet($offset, $value): void
     {
@@ -1314,9 +1275,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Unsets offset.
      *
-     * @param integer $offset Offset
-     *
-     * @return void
+     * @param  int  $offset Offset
      */
     public function offsetUnset($offset): void
     {
@@ -1325,6 +1284,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
+     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -1333,7 +1293,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -1359,5 +1319,3 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

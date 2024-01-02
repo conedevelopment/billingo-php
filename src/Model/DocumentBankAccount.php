@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,75 +30,79 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentBankAccount Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
+ *
  * @implements \ArrayAccess<string, mixed>
  */
-class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializable
+class DocumentBankAccount implements \JsonSerializable, ArrayAccess, ModelInterface
 {
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'DocumentBankAccount';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'id' => 'int',
         'name' => 'string',
         'accountNumber' => 'string',
         'accountNumberIban' => 'string',
-        'swift' => 'string'
+        'swift' => 'string',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     *
+     * @phpstan-var array<string, string|null>
+     *
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'id' => null,
         'name' => null,
         'accountNumber' => null,
         'accountNumberIban' => null,
-        'swift' => null
+        'swift' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var bool[]
+     */
     protected static array $openAPINullables = [
         'id' => true,
         'name' => false,
         'accountNumber' => false,
         'accountNumberIban' => false,
-        'swift' => false
+        'swift' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var bool[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -122,8 +127,6 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Array of nullable properties
-     *
-     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -133,7 +136,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return boolean[]
+     * @return bool[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -143,7 +146,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param boolean[] $openAPINullablesSetToNull
+     * @param  bool[]  $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -152,9 +155,6 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Checks if a property is nullable
-     *
-     * @param string $property
-     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -163,9 +163,6 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Checks if a nullable property is set to null.
-     *
-     * @param string $property
-     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -183,7 +180,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         'name' => 'name',
         'accountNumber' => 'account_number',
         'accountNumberIban' => 'account_number_iban',
-        'swift' => 'swift'
+        'swift' => 'swift',
     ];
 
     /**
@@ -196,7 +193,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         'name' => 'setName',
         'accountNumber' => 'setAccountNumber',
         'accountNumberIban' => 'setAccountNumberIban',
-        'swift' => 'setSwift'
+        'swift' => 'setSwift',
     ];
 
     /**
@@ -209,7 +206,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         'name' => 'getName',
         'accountNumber' => 'getAccountNumber',
         'accountNumberIban' => 'getAccountNumberIban',
-        'swift' => 'getSwift'
+        'swift' => 'getSwift',
     ];
 
     /**
@@ -253,7 +250,6 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         return self::$openAPIModelName;
     }
 
-
     /**
      * Associative array for storing property values
      *
@@ -264,10 +260,10 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Constructor
      *
-     * @param mixed[] $data Associated array of property values
+     * @param  mixed[]  $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('name', $data ?? [], null);
@@ -277,14 +273,12 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param  mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -309,6 +303,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         if ($this->container['accountNumber'] === null) {
             $invalidProperties[] = "'accountNumber' can't be null";
         }
+
         return $invalidProperties;
     }
 
@@ -323,7 +318,6 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
      * Gets id
      *
@@ -337,8 +331,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets id
      *
-     * @param int|null $id id
-     *
+     * @param  int|null  $id id
      * @return self
      */
     public function setId($id)
@@ -348,7 +341,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
             $index = array_search('id', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -371,8 +364,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets name
      *
-     * @param string $name name
-     *
+     * @param  string  $name name
      * @return self
      */
     public function setName($name)
@@ -398,8 +390,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets accountNumber
      *
-     * @param string $accountNumber accountNumber
-     *
+     * @param  string  $accountNumber accountNumber
      * @return self
      */
     public function setAccountNumber($accountNumber)
@@ -425,8 +416,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets accountNumberIban
      *
-     * @param string|null $accountNumberIban accountNumberIban
-     *
+     * @param  string|null  $accountNumberIban accountNumberIban
      * @return self
      */
     public function setAccountNumberIban($accountNumberIban)
@@ -452,8 +442,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets swift
      *
-     * @param string|null $swift swift
-     *
+     * @param  string|null  $swift swift
      * @return self
      */
     public function setSwift($swift)
@@ -465,12 +454,11 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param integer $offset Offset
-     *
-     * @return boolean
+     * @param  int  $offset Offset
      */
     public function offsetExists($offset): bool
     {
@@ -480,8 +468,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets offset.
      *
-     * @param integer $offset Offset
-     *
+     * @param  int  $offset Offset
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -493,10 +480,8 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets value based on offset.
      *
-     * @param int|null $offset Offset
-     * @param mixed    $value  Value to be set
-     *
-     * @return void
+     * @param  int|null  $offset Offset
+     * @param  mixed  $value  Value to be set
      */
     public function offsetSet($offset, $value): void
     {
@@ -510,9 +495,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Unsets offset.
      *
-     * @param integer $offset Offset
-     *
-     * @return void
+     * @param  int  $offset Offset
      */
     public function offsetUnset($offset): void
     {
@@ -521,6 +504,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
+     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -529,7 +513,7 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -555,5 +539,3 @@ class DocumentBankAccount implements ModelInterface, ArrayAccess, \JsonSerializa
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

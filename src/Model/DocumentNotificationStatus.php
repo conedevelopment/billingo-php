@@ -5,8 +5,9 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 
@@ -28,14 +29,14 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentNotificationStatus Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
+ *
  * @author   OpenAPI Generator team
+ *
  * @link     https://openapi-generator.tech
  */
 class DocumentNotificationStatus
@@ -57,6 +58,7 @@ class DocumentNotificationStatus
 
     /**
      * Gets allowable values of the enum
+     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -67,9 +69,7 @@ class DocumentNotificationStatus
             self::FAILED,
             self::NONE,
             self::OPENED,
-            self::READED
+            self::READED,
         ];
     }
 }
-
-

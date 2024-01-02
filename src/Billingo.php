@@ -22,47 +22,47 @@ class Billingo
     /**
      * The bank account service instance.
      */
-    protected BankAccountApi $bankAccounts;
+    protected ?BankAccountApi $bankAccounts = null;
 
     /**
      * The currencies service instance.
      */
-    protected CurrencyApi $currencies;
+    protected ?CurrencyApi $currencies = null;
 
     /**
      * The document service instance.
      */
-    protected DocumentApi $documents;
+    protected ?DocumentApi $documents = null;
 
     /**
      * The document export service instance.
      */
-    protected DocumentExportApi $documentExports;
+    protected ?DocumentExportApi $documentExports = null;
 
     /**
      * The organization service instance.
      */
-    protected OrganizationApi $organizations;
+    protected ?OrganizationApi $organizations = null;
 
     /**
      * The partner service instance.
      */
-    protected PartnerApi $partners;
+    protected ?PartnerApi $partners = null;
 
     /**
      * The product service instance.
      */
-    protected ProductApi $products;
+    protected ?ProductApi $products = null;
 
     /**
      * The spending service instance.
      */
-    protected SpendingApi $spendings;
+    protected ?SpendingApi $spendings = null;
 
     /**
      * The util service instance.
      */
-    protected UtilApi $utils;
+    protected ?UtilApi $utils = null;
 
     /**
      * Create a new Billingo client.
