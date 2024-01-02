@@ -28,7 +28,8 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentExportQueryType Class Doc Comment
@@ -59,5 +60,3 @@ class DocumentExportQueryType
         ];
     }
 }
-
-

@@ -29,8 +29,8 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentSummary Class Doc Comment
@@ -550,7 +550,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -576,5 +576,3 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

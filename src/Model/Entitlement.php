@@ -28,7 +28,8 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * Entitlement Class Doc Comment
@@ -99,5 +100,3 @@ class Entitlement
         ];
     }
 }
-
-

@@ -28,7 +28,8 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * OnlineSzamlaStatusEnum Class Doc Comment
@@ -167,5 +168,3 @@ class OnlineSzamlaStatusEnum
         ];
     }
 }
-
-

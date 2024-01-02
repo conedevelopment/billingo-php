@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -30,13 +29,14 @@
 
 namespace Cone\Billingo\Model;
 
+use Cone\Billingo\ObjectSerializer;
+
 /**
  * PaymentMethod Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class PaymentMethod
@@ -102,7 +102,6 @@ class PaymentMethod
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -135,7 +134,7 @@ class PaymentMethod
             self::UPWORK,
             self::UTALVANY,
             self::VALTO,
-            self::WIRE_TRANSFER,
+            self::WIRE_TRANSFER
         ];
     }
 }
