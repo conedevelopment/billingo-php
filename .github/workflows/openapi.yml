@@ -37,6 +37,13 @@ jobs:
                 sudo -- apt-get update
                 sudo -- apt-get install -y xmlstarlet
         -
+            name: "Set up PHP"
+            uses: "shivammathur/setup-php@v2"
+            with:
+                php-version: "8.1"
+                tools: "php-cs-fixer"
+                coverage: "none"
+        -
             name: "Determine OpenAPI CLI version"
             id: "openapi_cli"
             run: |
@@ -70,11 +77,14 @@ jobs:
                 cat .openapi-generator/FILES | xargs -- rm -f -r
         -
             name: "Generate client"
+            env:
+                PHP_POST_PROCESS_FILE: "php-cs-fixer fix --allow-risky yes"
             run: |
                 java -jar "${{ runner.temp }}/openapi-generator-cli.jar" generate \
                     --input-spec "${{ runner.temp }}/spec.json" \
                     --generator-name php \
                     --output ./ \
+                    --enable-post-process-file \
                     --additional-properties 'invokerPackage=Cone\Billingo,variableNamingConvention=camelCase,srcBasePath=src'
         -
             name: "Check difference to repository"
