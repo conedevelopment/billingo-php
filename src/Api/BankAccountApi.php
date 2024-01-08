@@ -4,7 +4,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -44,7 +43,6 @@ use Cone\Billingo\ObjectSerializer;
  * BankAccountApi Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -230,7 +228,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\BankAccount', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -257,7 +255,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -284,7 +282,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -311,7 +309,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -338,7 +336,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -365,7 +363,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -392,7 +390,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -419,7 +417,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -448,7 +446,7 @@ class BankAccountApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -575,7 +573,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -648,7 +646,7 @@ class BankAccountApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -938,7 +936,7 @@ class BankAccountApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -1076,7 +1074,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\BankAccount', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1103,7 +1101,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1130,7 +1128,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -1157,7 +1155,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -1184,7 +1182,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -1211,7 +1209,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -1238,7 +1236,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1265,7 +1263,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -1294,7 +1292,7 @@ class BankAccountApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -1421,7 +1419,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -1495,7 +1493,7 @@ class BankAccountApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -1635,7 +1633,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\BankAccountList', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1662,7 +1660,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1689,7 +1687,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -1716,7 +1714,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -1743,7 +1741,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -1770,7 +1768,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -1797,7 +1795,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -1826,7 +1824,7 @@ class BankAccountApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -1947,7 +1945,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -1987,7 +1985,7 @@ class BankAccountApi
         if ($perPage !== null && $perPage < 1) {
             throw new \InvalidArgumentException('invalid value for "$perPage" when calling BankAccountApi.listBankAccount, must be bigger than or equal to 1.');
         }
-        
+
 
         $resourcePath = '/bank-accounts';
         $formParams = [];
@@ -2033,7 +2031,7 @@ class BankAccountApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -2173,7 +2171,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\BankAccount', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2200,7 +2198,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2227,7 +2225,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -2254,7 +2252,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2281,7 +2279,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -2308,7 +2306,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -2335,7 +2333,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -2362,7 +2360,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2389,7 +2387,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -2418,7 +2416,7 @@ class BankAccountApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -2555,7 +2553,7 @@ class BankAccountApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -2644,7 +2642,7 @@ class BankAccountApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }

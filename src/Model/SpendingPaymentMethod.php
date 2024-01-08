@@ -5,9 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -30,13 +28,13 @@
 
 namespace Cone\Billingo\Model;
 
+use Cone\Billingo\ObjectSerializer;
+
 /**
  * SpendingPaymentMethod Class Doc Comment
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class SpendingPaymentMethod
@@ -102,7 +100,6 @@ class SpendingPaymentMethod
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()

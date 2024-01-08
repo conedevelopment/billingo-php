@@ -4,7 +4,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -44,7 +43,6 @@ use Cone\Billingo\ObjectSerializer;
  * DocumentApi Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -438,7 +436,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -578,7 +576,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -605,7 +603,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -632,7 +630,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -659,7 +657,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -686,7 +684,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -713,7 +711,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -740,7 +738,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -767,7 +765,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -794,7 +792,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -823,7 +821,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -960,7 +958,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -1043,7 +1041,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -1181,7 +1179,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1208,7 +1206,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1235,7 +1233,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -1262,7 +1260,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1289,7 +1287,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -1316,7 +1314,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -1343,7 +1341,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -1370,7 +1368,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -1399,7 +1397,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -1526,7 +1524,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -1599,7 +1597,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -1739,7 +1737,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1766,7 +1764,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1793,7 +1791,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -1820,7 +1818,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1847,7 +1845,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -1874,7 +1872,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -1901,7 +1899,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -1928,7 +1926,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1955,7 +1953,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -1984,7 +1982,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -2121,7 +2119,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -2210,7 +2208,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -2350,7 +2348,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2377,7 +2375,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2404,7 +2402,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -2431,7 +2429,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2458,7 +2456,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -2485,7 +2483,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -2512,7 +2510,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -2539,7 +2537,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2566,7 +2564,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -2595,7 +2593,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -2732,7 +2730,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -2815,7 +2813,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -2955,7 +2953,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2982,7 +2980,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -3009,7 +3007,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -3036,7 +3034,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -3063,7 +3061,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -3090,7 +3088,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -3117,7 +3115,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -3144,7 +3142,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -3171,7 +3169,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -3200,7 +3198,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -3337,7 +3335,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -3426,7 +3424,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -3564,7 +3562,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -3591,7 +3589,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -3618,7 +3616,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -3645,7 +3643,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -3672,7 +3670,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -3699,7 +3697,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -3726,7 +3724,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -3753,7 +3751,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -3782,7 +3780,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -3909,7 +3907,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -3982,7 +3980,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -4122,7 +4120,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -4149,7 +4147,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -4176,7 +4174,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -4203,7 +4201,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -4230,7 +4228,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -4257,7 +4255,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -4284,7 +4282,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -4311,7 +4309,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -4338,7 +4336,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -4367,7 +4365,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -4504,7 +4502,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -4593,7 +4591,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -4883,7 +4881,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -5021,7 +5019,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\PaymentHistory[]', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5048,7 +5046,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5075,7 +5073,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -5102,7 +5100,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5129,7 +5127,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -5156,7 +5154,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -5183,7 +5181,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5210,7 +5208,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -5239,7 +5237,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -5366,7 +5364,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -5440,7 +5438,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -5578,7 +5576,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5605,7 +5603,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5632,7 +5630,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -5659,7 +5657,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5686,7 +5684,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -5713,7 +5711,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -5740,7 +5738,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -5767,7 +5765,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -5794,7 +5792,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -5823,7 +5821,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -5958,7 +5956,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -6032,7 +6030,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -6170,7 +6168,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\SplFileObject', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 202:
                     if ('\Cone\Billingo\Model\ClientError' === '\SplFileObject') {
@@ -6197,7 +6195,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientError', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -6224,7 +6222,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -6251,7 +6249,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -6278,7 +6276,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -6305,7 +6303,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -6332,7 +6330,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -6359,7 +6357,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -6386,7 +6384,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -6415,7 +6413,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -6550,7 +6548,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -6624,7 +6622,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -6762,7 +6760,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -6789,7 +6787,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -6816,7 +6814,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -6843,7 +6841,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -6870,7 +6868,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -6897,7 +6895,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -6924,7 +6922,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -6951,7 +6949,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -6980,7 +6978,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -7107,7 +7105,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -7181,7 +7179,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -7319,7 +7317,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Document', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -7346,7 +7344,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -7373,7 +7371,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -7400,7 +7398,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -7427,7 +7425,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -7454,7 +7452,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -7481,7 +7479,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -7510,7 +7508,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -7629,7 +7627,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -7703,7 +7701,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -7841,7 +7839,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\OnlineSzamlaStatus', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -7868,7 +7866,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -7895,7 +7893,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -7922,7 +7920,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -7949,7 +7947,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -7976,7 +7974,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -8003,7 +8001,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -8030,7 +8028,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -8059,7 +8057,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -8186,7 +8184,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -8260,7 +8258,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -8398,7 +8396,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\PaymentHistory[]', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -8425,7 +8423,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -8452,7 +8450,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -8479,7 +8477,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -8506,7 +8504,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -8533,7 +8531,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -8560,7 +8558,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -8587,7 +8585,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -8616,7 +8614,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -8743,7 +8741,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -8817,7 +8815,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -8955,7 +8953,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\DocumentPublicUrl', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -8982,7 +8980,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -9009,7 +9007,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -9036,7 +9034,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -9063,7 +9061,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -9090,7 +9088,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -9117,7 +9115,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -9144,7 +9142,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -9173,7 +9171,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -9300,7 +9298,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -9374,7 +9372,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -9548,7 +9546,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\DocumentList', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -9575,7 +9573,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -9602,7 +9600,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -9629,7 +9627,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -9656,7 +9654,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -9683,7 +9681,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -9710,7 +9708,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -9739,7 +9737,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -9894,7 +9892,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -9951,7 +9949,7 @@ class DocumentApi
         if ($perPage !== null && $perPage < 1) {
             throw new \InvalidArgumentException('invalid value for "$perPage" when calling DocumentApi.listDocument, must be bigger than or equal to 1.');
         }
-        
+
 
 
 
@@ -10167,7 +10165,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -10307,7 +10305,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\SplFileObject', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -10334,7 +10332,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -10361,7 +10359,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -10388,7 +10386,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -10415,7 +10413,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -10442,7 +10440,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -10469,7 +10467,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -10496,7 +10494,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -10525,7 +10523,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -10654,7 +10652,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -10745,7 +10743,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -10885,7 +10883,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SendDocument', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -10912,7 +10910,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -10939,7 +10937,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -10966,7 +10964,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -10993,7 +10991,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -11020,7 +11018,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -11047,7 +11045,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -11074,7 +11072,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -11101,7 +11099,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -11130,7 +11128,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -11267,7 +11265,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -11350,7 +11348,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -11490,7 +11488,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\PaymentHistory[]', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -11517,7 +11515,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -11544,7 +11542,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -11571,7 +11569,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -11598,7 +11596,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -11625,7 +11623,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -11652,7 +11650,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -11679,7 +11677,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -11706,7 +11704,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -11735,7 +11733,7 @@ class DocumentApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -11872,7 +11870,7 @@ class DocumentApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -11961,7 +11959,7 @@ class DocumentApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
