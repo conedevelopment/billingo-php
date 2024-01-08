@@ -29,8 +29,8 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * OnlineSzamlaStatus Class Doc Comment
@@ -448,7 +448,7 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess, \JsonSerializab
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -474,5 +474,3 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess, \JsonSerializab
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

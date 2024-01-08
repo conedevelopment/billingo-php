@@ -28,7 +28,8 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentType Class Doc Comment
@@ -104,5 +105,3 @@ class DocumentType
         ];
     }
 }
-
-

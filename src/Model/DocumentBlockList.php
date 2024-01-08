@@ -29,8 +29,8 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentBlockList Class Doc Comment
@@ -585,7 +585,7 @@ class DocumentBlockList implements ModelInterface, ArrayAccess, \JsonSerializabl
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -611,5 +611,3 @@ class DocumentBlockList implements ModelInterface, ArrayAccess, \JsonSerializabl
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

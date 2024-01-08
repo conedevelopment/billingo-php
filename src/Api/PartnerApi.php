@@ -1992,7 +1992,7 @@ class PartnerApi
         if ($perPage !== null && $perPage < 1) {
             throw new \InvalidArgumentException('invalid value for "$perPage" when calling PartnerApi.listPartner, must be bigger than or equal to 1.');
         }
-        
+
 
 
         $resourcePath = '/partners';
