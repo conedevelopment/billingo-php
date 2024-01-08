@@ -28,7 +28,8 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * PartnerTaxType Class Doc Comment
@@ -65,5 +66,3 @@ class PartnerTaxType
         ];
     }
 }
-
-

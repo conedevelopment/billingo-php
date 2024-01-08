@@ -18,7 +18,6 @@ return $config->setRules([
         'array_syntax' => [ 'syntax' => 'short' ],
         'strict_comparison' => true,
         'strict_param' => true,
-        'phpdoc_indent' = > true,
         'no_trailing_whitespace' => false,
         'no_trailing_whitespace_in_comment' => false,
         'braces' => false,

@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -37,75 +36,71 @@ use Cone\Billingo\ObjectSerializer;
  * PartnerCustomBillingSettings Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
- *
  * @implements \ArrayAccess<string, mixed>
  */
-class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, ModelInterface
+class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
     /**
-     * The original name of the model.
-     *
-     * @var string
-     */
+      * The original name of the model.
+      *
+      * @var string
+      */
     protected static $openAPIModelName = 'PartnerCustomBillingSettings';
 
     /**
-     * Array of property to type mappings. Used for (de)serialization
-     *
-     * @var string[]
-     */
+      * Array of property to type mappings. Used for (de)serialization
+      *
+      * @var string[]
+      */
     protected static $openAPITypes = [
         'paymentMethod' => '\Cone\Billingo\Model\PaymentMethod',
         'documentForm' => '\Cone\Billingo\Model\DocumentForm',
         'dueDays' => 'int',
         'documentCurrency' => '\Cone\Billingo\Model\Currency',
         'templateLanguageCode' => '\Cone\Billingo\Model\DocumentLanguage',
-        'discount' => '\Cone\Billingo\Model\Discount',
+        'discount' => '\Cone\Billingo\Model\Discount'
     ];
 
     /**
-     * Array of property to format mappings. Used for (de)serialization
-     *
-     * @var string[]
-     *
-     * @phpstan-var array<string, string|null>
-     *
-     * @psalm-var array<string, string|null>
-     */
+      * Array of property to format mappings. Used for (de)serialization
+      *
+      * @var string[]
+      * @phpstan-var array<string, string|null>
+      * @psalm-var array<string, string|null>
+      */
     protected static $openAPIFormats = [
         'paymentMethod' => null,
         'documentForm' => null,
         'dueDays' => null,
         'documentCurrency' => null,
         'templateLanguageCode' => null,
-        'discount' => null,
+        'discount' => null
     ];
 
     /**
-     * Array of nullable properties. Used for (de)serialization
-     *
-     * @var bool[]
-     */
+      * Array of nullable properties. Used for (de)serialization
+      *
+      * @var boolean[]
+      */
     protected static array $openAPINullables = [
         'paymentMethod' => false,
         'documentForm' => false,
         'dueDays' => false,
         'documentCurrency' => false,
         'templateLanguageCode' => false,
-        'discount' => false,
+        'discount' => false
     ];
 
     /**
-     * If a nullable field gets set to null, insert it here
-     *
-     * @var bool[]
-     */
+      * If a nullable field gets set to null, insert it here
+      *
+      * @var boolean[]
+      */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -130,6 +125,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
 
     /**
      * Array of nullable properties
+     *
+     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -139,7 +136,7 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return bool[]
+     * @return boolean[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -149,7 +146,7 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param  bool[]  $openAPINullablesSetToNull
+     * @param boolean[] $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -158,6 +155,9 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
 
     /**
      * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -166,6 +166,9 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -184,7 +187,7 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
         'dueDays' => 'due_days',
         'documentCurrency' => 'document_currency',
         'templateLanguageCode' => 'template_language_code',
-        'discount' => 'discount',
+        'discount' => 'discount'
     ];
 
     /**
@@ -198,7 +201,7 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
         'dueDays' => 'setDueDays',
         'documentCurrency' => 'setDocumentCurrency',
         'templateLanguageCode' => 'setTemplateLanguageCode',
-        'discount' => 'setDiscount',
+        'discount' => 'setDiscount'
     ];
 
     /**
@@ -212,7 +215,7 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
         'dueDays' => 'getDueDays',
         'documentCurrency' => 'getDocumentCurrency',
         'templateLanguageCode' => 'getTemplateLanguageCode',
-        'discount' => 'getDiscount',
+        'discount' => 'getDiscount'
     ];
 
     /**
@@ -256,6 +259,7 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
         return self::$openAPIModelName;
     }
 
+
     /**
      * Associative array for storing property values
      *
@@ -266,10 +270,10 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Constructor
      *
-     * @param  mixed[]  $data Associated array of property values
+     * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(?array $data = null)
+    public function __construct(array $data = null)
     {
         $this->setIfExists('paymentMethod', $data ?? [], null);
         $this->setIfExists('documentForm', $data ?? [], null);
@@ -280,12 +284,14 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     }
 
     /**
-     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-     * $this->openAPINullablesSetToNull array
-     *
-     * @param  mixed  $defaultValue
-     */
+    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+    * $this->openAPINullablesSetToNull array
+    *
+    * @param string $variableName
+    * @param array  $fields
+    * @param mixed  $defaultValue
+    */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -318,6 +324,7 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
         return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
      * Gets paymentMethod
      *
@@ -331,7 +338,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Sets paymentMethod
      *
-     * @param  \Cone\Billingo\Model\PaymentMethod|null  $paymentMethod paymentMethod
+     * @param \Cone\Billingo\Model\PaymentMethod|null $paymentMethod paymentMethod
+     *
      * @return self
      */
     public function setPaymentMethod($paymentMethod)
@@ -357,7 +365,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Sets documentForm
      *
-     * @param  \Cone\Billingo\Model\DocumentForm|null  $documentForm documentForm
+     * @param \Cone\Billingo\Model\DocumentForm|null $documentForm documentForm
+     *
      * @return self
      */
     public function setDocumentForm($documentForm)
@@ -383,7 +392,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Sets dueDays
      *
-     * @param  int|null  $dueDays dueDays
+     * @param int|null $dueDays dueDays
+     *
      * @return self
      */
     public function setDueDays($dueDays)
@@ -409,7 +419,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Sets documentCurrency
      *
-     * @param  \Cone\Billingo\Model\Currency|null  $documentCurrency documentCurrency
+     * @param \Cone\Billingo\Model\Currency|null $documentCurrency documentCurrency
+     *
      * @return self
      */
     public function setDocumentCurrency($documentCurrency)
@@ -435,7 +446,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Sets templateLanguageCode
      *
-     * @param  \Cone\Billingo\Model\DocumentLanguage|null  $templateLanguageCode templateLanguageCode
+     * @param \Cone\Billingo\Model\DocumentLanguage|null $templateLanguageCode templateLanguageCode
+     *
      * @return self
      */
     public function setTemplateLanguageCode($templateLanguageCode)
@@ -461,7 +473,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Sets discount
      *
-     * @param  \Cone\Billingo\Model\Discount|null  $discount discount
+     * @param \Cone\Billingo\Model\Discount|null $discount discount
+     *
      * @return self
      */
     public function setDiscount($discount)
@@ -473,11 +486,12 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return boolean
      */
     public function offsetExists($offset): bool
     {
@@ -487,7 +501,8 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Gets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -499,8 +514,10 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Sets value based on offset.
      *
-     * @param  int|null  $offset Offset
-     * @param  mixed  $value  Value to be set
+     * @param int|null $offset Offset
+     * @param mixed    $value  Value to be set
+     *
+     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -514,7 +531,9 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
     /**
      * Unsets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return void
      */
     public function offsetUnset($offset): void
     {
@@ -523,7 +542,6 @@ class PartnerCustomBillingSettings implements \JsonSerializable, ArrayAccess, Mo
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
