@@ -5,9 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,14 +27,13 @@
  */
 
 namespace Cone\Billingo\Model;
+use \Cone\Billingo\ObjectSerializer;
 
 /**
  * CorrectionType Class Doc Comment
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class CorrectionType
@@ -84,7 +81,6 @@ class CorrectionType
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -112,3 +108,5 @@ class CorrectionType
         ];
     }
 }
+
+

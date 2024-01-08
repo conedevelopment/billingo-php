@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -36,7 +35,6 @@ use \Cone\Billingo\ObjectSerializer;
  * DocumentSummary Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -46,61 +44,61 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'DocumentSummary';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'netAmount' => 'float',
         'netAmountLocal' => 'float',
         'grossAmountLocal' => 'float',
         'vatAmount' => 'float',
         'vatAmountLocal' => 'float',
-        'vatRateSummary' => '\Cone\Billingo\Model\DocumentVatRateSummary[]'
+        'vatRateSummary' => '\Cone\Billingo\Model\DocumentVatRateSummary[]',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     * @phpstan-var array<string, string|null>
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'netAmount' => 'float',
         'netAmountLocal' => 'float',
         'grossAmountLocal' => 'float',
         'vatAmount' => 'float',
         'vatAmountLocal' => 'float',
-        'vatRateSummary' => null
+        'vatRateSummary' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var boolean[]
+     */
     protected static array $openAPINullables = [
         'netAmount' => false,
         'netAmountLocal' => false,
         'grossAmountLocal' => false,
         'vatAmount' => false,
         'vatAmountLocal' => false,
-        'vatRateSummary' => false
+        'vatRateSummary' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var boolean[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -187,7 +185,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
         'grossAmountLocal' => 'gross_amount_local',
         'vatAmount' => 'vat_amount',
         'vatAmountLocal' => 'vat_amount_local',
-        'vatRateSummary' => 'vat_rate_summary'
+        'vatRateSummary' => 'vat_rate_summary',
     ];
 
     /**
@@ -201,7 +199,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
         'grossAmountLocal' => 'setGrossAmountLocal',
         'vatAmount' => 'setVatAmount',
         'vatAmountLocal' => 'setVatAmountLocal',
-        'vatRateSummary' => 'setVatRateSummary'
+        'vatRateSummary' => 'setVatRateSummary',
     ];
 
     /**
@@ -215,7 +213,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
         'grossAmountLocal' => 'getGrossAmountLocal',
         'vatAmount' => 'getVatAmount',
         'vatAmountLocal' => 'getVatAmountLocal',
-        'vatRateSummary' => 'getVatRateSummary'
+        'vatRateSummary' => 'getVatRateSummary',
     ];
 
     /**
@@ -284,14 +282,14 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param string $variableName
+     * @param array  $fields
+     * @param mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -550,7 +548,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

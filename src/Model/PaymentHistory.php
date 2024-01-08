@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -36,7 +35,6 @@ use \Cone\Billingo\ObjectSerializer;
  * PaymentHistory Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -46,58 +44,58 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'PaymentHistory';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'date' => '\DateTime',
         'price' => 'float',
         'paymentMethod' => '\Cone\Billingo\Model\PaymentMethod',
         'voucherNumber' => 'string',
-        'conversionRate' => 'float'
+        'conversionRate' => 'float',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     * @phpstan-var array<string, string|null>
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'date' => 'date',
         'price' => 'float',
         'paymentMethod' => null,
         'voucherNumber' => null,
-        'conversionRate' => 'float'
+        'conversionRate' => 'float',
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var boolean[]
+     */
     protected static array $openAPINullables = [
         'date' => false,
         'price' => false,
         'paymentMethod' => false,
         'voucherNumber' => true,
-        'conversionRate' => true
+        'conversionRate' => true,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var boolean[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -183,7 +181,7 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
         'price' => 'price',
         'paymentMethod' => 'payment_method',
         'voucherNumber' => 'voucher_number',
-        'conversionRate' => 'conversion_rate'
+        'conversionRate' => 'conversion_rate',
     ];
 
     /**
@@ -196,7 +194,7 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
         'price' => 'setPrice',
         'paymentMethod' => 'setPaymentMethod',
         'voucherNumber' => 'setVoucherNumber',
-        'conversionRate' => 'setConversionRate'
+        'conversionRate' => 'setConversionRate',
     ];
 
     /**
@@ -209,7 +207,7 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
         'price' => 'getPrice',
         'paymentMethod' => 'getPaymentMethod',
         'voucherNumber' => 'getVoucherNumber',
-        'conversionRate' => 'getConversionRate'
+        'conversionRate' => 'getConversionRate',
     ];
 
     /**
@@ -277,14 +275,14 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param string $variableName
+     * @param array  $fields
+     * @param mixed  $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -431,8 +429,8 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
             array_push($this->openAPINullablesSetToNull, 'voucherNumber');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('voucherNumber', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('voucherNumber', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -465,8 +463,8 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
             array_push($this->openAPINullablesSetToNull, 'conversionRate');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('conversionRate', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('conversionRate', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -539,7 +537,7 @@ class PaymentHistory implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,7 +33,6 @@ use \Cone\Billingo\ObjectSerializer;
  * DocumentType Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -100,7 +98,7 @@ class DocumentType
             self::PROFORMA,
             self::RECEIPT,
             self::RECEIPT_CANCELLATION,
-            self::WAYBILL
+            self::WAYBILL,
         ];
     }
 }

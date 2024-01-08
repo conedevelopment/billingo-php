@@ -5,9 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -30,21 +28,18 @@
 
 namespace Cone\Billingo\Model;
 
-use ArrayAccess;
-use Cone\Billingo\ObjectSerializer;
+use \ArrayAccess;
+use \Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentSettings Class Doc Comment
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
- *
  * @implements \ArrayAccess<string, mixed>
  */
-class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
+class DocumentSettings implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -76,9 +71,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
      * Array of property to format mappings. Used for (de)serialization
      *
      * @var string[]
-     *
      * @phpstan-var array<string, string|null>
-     *
      * @psalm-var array<string, string|null>
      */
     protected static $openAPIFormats = [
@@ -96,7 +89,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Array of nullable properties. Used for (de)serialization
      *
-     * @var bool[]
+     * @var boolean[]
      */
     protected static array $openAPINullables = [
         'mediatedService' => false,
@@ -113,7 +106,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * If a nullable field gets set to null, insert it here
      *
-     * @var bool[]
+     * @var boolean[]
      */
     protected array $openAPINullablesSetToNull = [];
 
@@ -139,6 +132,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Array of nullable properties
+     *
+     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -148,7 +143,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return bool[]
+     * @return boolean[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -158,7 +153,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param  bool[]  $openAPINullablesSetToNull
+     * @param boolean[] $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -167,6 +162,9 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -175,6 +173,9 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -274,6 +275,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
         return self::$openAPIModelName;
     }
 
+
     /**
      * Associative array for storing property values
      *
@@ -284,10 +286,10 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Constructor
      *
-     * @param  mixed[]  $data Associated array of property values
+     * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(?array $data = null)
+    public function __construct(array $data = null)
     {
         $this->setIfExists('mediatedService', $data ?? [], false);
         $this->setIfExists('withoutFinancialFulfillment', $data ?? [], false);
@@ -305,7 +307,9 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
      * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
      * $this->openAPINullablesSetToNull array
      *
-     * @param  mixed  $defaultValue
+     * @param string $variableName
+     * @param array  $fields
+     * @param mixed  $defaultValue
      */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
@@ -339,6 +343,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
         return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
      * Gets mediatedService
      *
@@ -352,7 +357,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets mediatedService
      *
-     * @param  bool|null  $mediatedService mediatedService
+     * @param bool|null $mediatedService mediatedService
+     *
      * @return self
      */
     public function setMediatedService($mediatedService)
@@ -378,7 +384,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets withoutFinancialFulfillment
      *
-     * @param  bool|null  $withoutFinancialFulfillment withoutFinancialFulfillment
+     * @param bool|null $withoutFinancialFulfillment withoutFinancialFulfillment
+     *
      * @return self
      */
     public function setWithoutFinancialFulfillment($withoutFinancialFulfillment)
@@ -404,7 +411,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets onlinePayment
      *
-     * @param  \Cone\Billingo\Model\OnlinePayment|null  $onlinePayment onlinePayment
+     * @param \Cone\Billingo\Model\OnlinePayment|null $onlinePayment onlinePayment
+     *
      * @return self
      */
     public function setOnlinePayment($onlinePayment)
@@ -430,7 +438,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets round
      *
-     * @param  \Cone\Billingo\Model\Round|null  $round round
+     * @param \Cone\Billingo\Model\Round|null $round round
+     *
      * @return self
      */
     public function setRound($round)
@@ -456,7 +465,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets noSendOnlineszamlaByUser
      *
-     * @param  bool|null  $noSendOnlineszamlaByUser noSendOnlineszamlaByUser
+     * @param bool|null $noSendOnlineszamlaByUser noSendOnlineszamlaByUser
+     *
      * @return self
      */
     public function setNoSendOnlineszamlaByUser($noSendOnlineszamlaByUser)
@@ -482,7 +492,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets orderNumber
      *
-     * @param  string|null  $orderNumber orderNumber
+     * @param string|null $orderNumber orderNumber
+     *
      * @return self
      */
     public function setOrderNumber($orderNumber)
@@ -508,7 +519,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets placeId
      *
-     * @param  int|null  $placeId placeId
+     * @param int|null $placeId placeId
+     *
      * @return self
      */
     public function setPlaceId($placeId)
@@ -517,7 +529,7 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
             array_push($this->openAPINullablesSetToNull, 'placeId');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('placeId', $nullablesSetToNull);
+            $index = array_search('placeId', $nullablesSetToNull, true);
             if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
@@ -541,7 +553,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets instantPayment
      *
-     * @param  bool|null  $instantPayment instantPayment
+     * @param bool|null $instantPayment instantPayment
+     *
      * @return self
      */
     public function setInstantPayment($instantPayment)
@@ -567,7 +580,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets selectedType
      *
-     * @param  \Cone\Billingo\Model\DocumentType|null  $selectedType selectedType
+     * @param \Cone\Billingo\Model\DocumentType|null $selectedType selectedType
+     *
      * @return self
      */
     public function setSelectedType($selectedType)
@@ -579,11 +593,12 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return boolean
      */
     public function offsetExists($offset): bool
     {
@@ -593,7 +608,8 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Gets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -605,8 +621,10 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets value based on offset.
      *
-     * @param  int|null  $offset Offset
-     * @param  mixed  $value  Value to be set
+     * @param int|null $offset Offset
+     * @param mixed    $value  Value to be set
+     *
+     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -620,7 +638,9 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Unsets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return void
      */
     public function offsetUnset($offset): void
     {
@@ -629,7 +649,6 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -664,3 +683,5 @@ class DocumentSettings implements \JsonSerializable, ArrayAccess, ModelInterface
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

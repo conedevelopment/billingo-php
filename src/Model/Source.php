@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,7 +33,6 @@ use \Cone\Billingo\ObjectSerializer;
  * Source Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +56,7 @@ class Source
         return [
             self::ALL,
             self::MANUAL,
-            self::NAV
+            self::NAV,
         ];
     }
 }

@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,7 +33,6 @@ use \Cone\Billingo\ObjectSerializer;
  * DocumentBlockType Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -70,7 +68,7 @@ class DocumentBlockType
             self::OFFER,
             self::ORDER_FORM,
             self::RECEIPT,
-            self::WAYBILL
+            self::WAYBILL,
         ];
     }
 }

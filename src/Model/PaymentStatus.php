@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,7 +33,6 @@ use \Cone\Billingo\ObjectSerializer;
  * PaymentStatus Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -64,7 +62,7 @@ class PaymentStatus
             self::NONE,
             self::OUTSTANDING,
             self::PAID,
-            self::PARTIALLY_PAID
+            self::PARTIALLY_PAID,
         ];
     }
 }

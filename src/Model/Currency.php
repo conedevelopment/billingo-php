@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,7 +33,6 @@ use \Cone\Billingo\ObjectSerializer;
  * Currency Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -157,7 +155,7 @@ class Currency
             self::_TRY,
             self::UAH,
             self::USD,
-            self::ZAR
+            self::ZAR,
         ];
     }
 }
