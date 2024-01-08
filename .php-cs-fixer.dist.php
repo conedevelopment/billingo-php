@@ -20,13 +20,8 @@ return $config->setRules([
         'strict_param' => true,
         'phpdoc_indent' => true,
         'phpdoc_no_package' => true,
+        'phpdoc_scalar' => true,
         'trailing_comma_in_multiline' => [ 'elements' => [ 'arrays' ] ],
-        'no_trailing_whitespace' => false,
-        'no_trailing_whitespace_in_comment' => false,
-        'braces' => false,
-        'single_blank_line_at_eof' => false,
-        'blank_line_after_namespace' => false,
-        'no_leading_import_slash' => false,
     ])
     ->setFinder($finder)
 ;
