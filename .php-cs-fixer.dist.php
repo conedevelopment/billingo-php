@@ -16,6 +16,7 @@ return $config->setRules([
         '@PSR12' => true,
         'phpdoc_order' => true,
         'array_syntax' => [ 'syntax' => 'short' ],
+        'single_line_comment_style' => [ 'comment_types' => [ 'hash' ] ],
         'strict_comparison' => true,
         'strict_param' => true,
         'phpdoc_indent' => true,
