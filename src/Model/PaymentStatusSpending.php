@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,14 +28,14 @@
  */
 
 namespace Cone\Billingo\Model;
+use \Cone\Billingo\ObjectSerializer;
 
 /**
  * PaymentStatusSpending Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class PaymentStatusSpending
@@ -52,7 +51,6 @@ class PaymentStatusSpending
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -60,7 +58,9 @@ class PaymentStatusSpending
         return [
             self::ALL,
             self::PAID,
-            self::UNPAID,
+            self::UNPAID
         ];
     }
 }
+
+

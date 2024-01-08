@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -29,14 +28,14 @@
  */
 
 namespace Cone\Billingo\Model;
+use \Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentFormat Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class DocumentFormat
@@ -52,7 +51,6 @@ class DocumentFormat
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -60,7 +58,9 @@ class DocumentFormat
         return [
             self::EMPTY,
             self::ELECTRONIC,
-            self::TRADITIONAL,
+            self::TRADITIONAL
         ];
     }
 }
+
+

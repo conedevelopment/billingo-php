@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -30,36 +29,34 @@
 
 namespace Cone\Billingo\Model;
 
-use ArrayAccess;
-use Cone\Billingo\ObjectSerializer;
+use \ArrayAccess;
+use \Cone\Billingo\ObjectSerializer;
 
 /**
  * Partner Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
- *
  * @implements \ArrayAccess<string, mixed>
  */
-class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
+class Partner implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
     /**
-     * The original name of the model.
-     *
-     * @var string
-     */
+      * The original name of the model.
+      *
+      * @var string
+      */
     protected static $openAPIModelName = 'Partner';
 
     /**
-     * Array of property to type mappings. Used for (de)serialization
-     *
-     * @var string[]
-     */
+      * Array of property to type mappings. Used for (de)serialization
+      *
+      * @var string[]
+      */
     protected static $openAPITypes = [
         'id' => 'int',
         'name' => 'string',
@@ -73,18 +70,16 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         'generalLedgerNumber' => 'string',
         'taxType' => '\Cone\Billingo\Model\PartnerTaxType',
         'customBillingSettings' => '\Cone\Billingo\Model\PartnerCustomBillingSettings',
-        'groupMemberTaxNumber' => 'string',
+        'groupMemberTaxNumber' => 'string'
     ];
 
     /**
-     * Array of property to format mappings. Used for (de)serialization
-     *
-     * @var string[]
-     *
-     * @phpstan-var array<string, string|null>
-     *
-     * @psalm-var array<string, string|null>
-     */
+      * Array of property to format mappings. Used for (de)serialization
+      *
+      * @var string[]
+      * @phpstan-var array<string, string|null>
+      * @psalm-var array<string, string|null>
+      */
     protected static $openAPIFormats = [
         'id' => null,
         'name' => null,
@@ -98,14 +93,14 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         'generalLedgerNumber' => null,
         'taxType' => null,
         'customBillingSettings' => null,
-        'groupMemberTaxNumber' => null,
+        'groupMemberTaxNumber' => null
     ];
 
     /**
-     * Array of nullable properties. Used for (de)serialization
-     *
-     * @var bool[]
-     */
+      * Array of nullable properties. Used for (de)serialization
+      *
+      * @var boolean[]
+      */
     protected static array $openAPINullables = [
         'id' => false,
         'name' => false,
@@ -119,14 +114,14 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         'generalLedgerNumber' => false,
         'taxType' => false,
         'customBillingSettings' => false,
-        'groupMemberTaxNumber' => false,
+        'groupMemberTaxNumber' => false
     ];
 
     /**
-     * If a nullable field gets set to null, insert it here
-     *
-     * @var bool[]
-     */
+      * If a nullable field gets set to null, insert it here
+      *
+      * @var boolean[]
+      */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -151,6 +146,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Array of nullable properties
+     *
+     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -160,7 +157,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Array of nullable field names deliberately set to null
      *
-     * @return bool[]
+     * @return boolean[]
      */
     private function getOpenAPINullablesSetToNull(): array
     {
@@ -170,7 +167,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param  bool[]  $openAPINullablesSetToNull
+     * @param boolean[] $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -179,6 +176,9 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -187,6 +187,9 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -212,7 +215,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         'generalLedgerNumber' => 'general_ledger_number',
         'taxType' => 'tax_type',
         'customBillingSettings' => 'custom_billing_settings',
-        'groupMemberTaxNumber' => 'group_member_tax_number',
+        'groupMemberTaxNumber' => 'group_member_tax_number'
     ];
 
     /**
@@ -233,7 +236,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         'generalLedgerNumber' => 'setGeneralLedgerNumber',
         'taxType' => 'setTaxType',
         'customBillingSettings' => 'setCustomBillingSettings',
-        'groupMemberTaxNumber' => 'setGroupMemberTaxNumber',
+        'groupMemberTaxNumber' => 'setGroupMemberTaxNumber'
     ];
 
     /**
@@ -254,7 +257,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         'generalLedgerNumber' => 'getGeneralLedgerNumber',
         'taxType' => 'getTaxType',
         'customBillingSettings' => 'getCustomBillingSettings',
-        'groupMemberTaxNumber' => 'getGroupMemberTaxNumber',
+        'groupMemberTaxNumber' => 'getGroupMemberTaxNumber'
     ];
 
     /**
@@ -298,6 +301,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         return self::$openAPIModelName;
     }
 
+
     /**
      * Associative array for storing property values
      *
@@ -308,10 +312,10 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Constructor
      *
-     * @param  mixed[]  $data Associated array of property values
+     * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(?array $data = null)
+    public function __construct(array $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('name', $data ?? [], null);
@@ -329,12 +333,14 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     }
 
     /**
-     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-     * $this->openAPINullablesSetToNull array
-     *
-     * @param  mixed  $defaultValue
-     */
+    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+    * $this->openAPINullablesSetToNull array
+    *
+    * @param string $variableName
+    * @param array  $fields
+    * @param mixed  $defaultValue
+    */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
         if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
@@ -367,6 +373,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
      * Gets id
      *
@@ -380,7 +387,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets id
      *
-     * @param  int|null  $id id
+     * @param int|null $id id
+     *
      * @return self
      */
     public function setId($id)
@@ -406,7 +414,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets name
      *
-     * @param  string|null  $name name
+     * @param string|null $name name
+     *
      * @return self
      */
     public function setName($name)
@@ -432,7 +441,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets address
      *
-     * @param  \Cone\Billingo\Model\Address|null  $address address
+     * @param \Cone\Billingo\Model\Address|null $address address
+     *
      * @return self
      */
     public function setAddress($address)
@@ -458,7 +468,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets emails
      *
-     * @param  string[]|null  $emails emails
+     * @param string[]|null $emails emails
+     *
      * @return self
      */
     public function setEmails($emails)
@@ -484,7 +495,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets taxcode
      *
-     * @param  string|null  $taxcode taxcode
+     * @param string|null $taxcode taxcode
+     *
      * @return self
      */
     public function setTaxcode($taxcode)
@@ -510,7 +522,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets iban
      *
-     * @param  string|null  $iban iban
+     * @param string|null $iban iban
+     *
      * @return self
      */
     public function setIban($iban)
@@ -536,7 +549,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets swift
      *
-     * @param  string|null  $swift swift
+     * @param string|null $swift swift
+     *
      * @return self
      */
     public function setSwift($swift)
@@ -562,7 +576,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets accountNumber
      *
-     * @param  string|null  $accountNumber accountNumber
+     * @param string|null $accountNumber accountNumber
+     *
      * @return self
      */
     public function setAccountNumber($accountNumber)
@@ -588,7 +603,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets phone
      *
-     * @param  string|null  $phone phone
+     * @param string|null $phone phone
+     *
      * @return self
      */
     public function setPhone($phone)
@@ -614,7 +630,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets generalLedgerNumber
      *
-     * @param  string|null  $generalLedgerNumber generalLedgerNumber
+     * @param string|null $generalLedgerNumber generalLedgerNumber
+     *
      * @return self
      */
     public function setGeneralLedgerNumber($generalLedgerNumber)
@@ -640,7 +657,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets taxType
      *
-     * @param  \Cone\Billingo\Model\PartnerTaxType|null  $taxType taxType
+     * @param \Cone\Billingo\Model\PartnerTaxType|null $taxType taxType
+     *
      * @return self
      */
     public function setTaxType($taxType)
@@ -666,7 +684,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets customBillingSettings
      *
-     * @param  \Cone\Billingo\Model\PartnerCustomBillingSettings|null  $customBillingSettings customBillingSettings
+     * @param \Cone\Billingo\Model\PartnerCustomBillingSettings|null $customBillingSettings customBillingSettings
+     *
      * @return self
      */
     public function setCustomBillingSettings($customBillingSettings)
@@ -692,7 +711,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets groupMemberTaxNumber
      *
-     * @param  string|null  $groupMemberTaxNumber The tax number of group member. Send tax number for update. Send empty string for delete. Ignored if omitted.
+     * @param string|null $groupMemberTaxNumber The tax number of group member. Send tax number for update. Send empty string for delete. Ignored if omitted.
+     *
      * @return self
      */
     public function setGroupMemberTaxNumber($groupMemberTaxNumber)
@@ -704,11 +724,12 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return boolean
      */
     public function offsetExists($offset): bool
     {
@@ -718,7 +739,8 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Gets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -730,8 +752,10 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets value based on offset.
      *
-     * @param  int|null  $offset Offset
-     * @param  mixed  $value  Value to be set
+     * @param int|null $offset Offset
+     * @param mixed    $value  Value to be set
+     *
+     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -745,7 +769,9 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Unsets offset.
      *
-     * @param  int  $offset Offset
+     * @param integer $offset Offset
+     *
+     * @return void
      */
     public function offsetUnset($offset): void
     {
@@ -754,7 +780,6 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
@@ -763,7 +788,7 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-        return ObjectSerializer::sanitizeForSerialization($this);
+       return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -789,3 +814,5 @@ class Partner implements \JsonSerializable, ArrayAccess, ModelInterface
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+
