@@ -1992,7 +1992,7 @@ class ProductApi
         if ($perPage !== null && $perPage < 1) {
             throw new \InvalidArgumentException('invalid value for "$perPage" when calling ProductApi.listProduct, must be bigger than or equal to 1.');
         }
-        
+
 
 
         $resourcePath = '/products';

@@ -29,8 +29,8 @@
 
 namespace Cone\Billingo\Model;
 
-use \ArrayAccess;
-use \Cone\Billingo\ObjectSerializer;
+use ArrayAccess;
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentExportFilterExtra Class Doc Comment
@@ -652,7 +652,7 @@ class DocumentExportFilterExtra implements ModelInterface, ArrayAccess, \JsonSer
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -678,5 +678,3 @@ class DocumentExportFilterExtra implements ModelInterface, ArrayAccess, \JsonSer
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

@@ -5,9 +5,8 @@
  * PHP version 7.4
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -30,13 +29,14 @@
 
 namespace Cone\Billingo\Model;
 
+use Cone\Billingo\ObjectSerializer;
+
 /**
  * Round Class Doc Comment
  *
  * @category Class
- *
+ * @package  Cone\Billingo
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class Round
@@ -54,7 +54,6 @@ class Round
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()
@@ -63,7 +62,7 @@ class Round
             self::FIVE,
             self::NONE,
             self::ONE,
-            self::TEN,
+            self::TEN
         ];
     }
 }

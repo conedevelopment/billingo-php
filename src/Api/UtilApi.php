@@ -575,7 +575,7 @@ class UtilApi
         if (!preg_match("/^([0-9]{8})-([12345])-([0-9]{2})$/", $taxNumber)) {
             throw new \InvalidArgumentException("invalid value for \"taxNumber\" when calling UtilApi.checkTaxNumber, must conform to the pattern /^([0-9]{8})-([12345])-([0-9]{2})$/.");
         }
-        
+
 
         $resourcePath = '/utils/check-tax-number/{tax_number}';
         $formParams = [];
