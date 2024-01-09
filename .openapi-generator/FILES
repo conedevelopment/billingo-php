@@ -1,4 +1,3 @@
-.php-cs-fixer.dist.php
 src/Api/BankAccountApi.php
 src/Api/CurrencyApi.php
 src/Api/DocumentApi.php

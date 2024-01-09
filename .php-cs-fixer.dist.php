@@ -16,14 +16,13 @@ return $config->setRules([
         '@PSR12' => true,
         'phpdoc_order' => true,
         'array_syntax' => [ 'syntax' => 'short' ],
+        'single_line_comment_style' => [ 'comment_types' => [ 'hash' ] ],
         'strict_comparison' => true,
         'strict_param' => true,
-        'no_trailing_whitespace' => false,
-        'no_trailing_whitespace_in_comment' => false,
-        'braces' => false,
-        'single_blank_line_at_eof' => false,
-        'blank_line_after_namespace' => false,
-        'no_leading_import_slash' => false,
+        'phpdoc_indent' => true,
+        'phpdoc_no_package' => true,
+        'phpdoc_scalar' => true,
+        'trailing_comma_in_multiline' => [ 'elements' => [ 'arrays' ] ],
     ])
     ->setFinder($finder)
 ;
