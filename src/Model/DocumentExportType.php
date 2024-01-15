@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -28,13 +27,13 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentExportType Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -124,9 +123,7 @@ class DocumentExportType
             self::SIMPLE_EXCEL,
             self::SIMPLE_EXCEL_ITEMS,
             self::TENSOFT,
-            self::TENSOFT_29_DOT_65
+            self::TENSOFT_29_DOT_65,
         ];
     }
 }
-
-

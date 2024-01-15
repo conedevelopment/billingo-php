@@ -4,7 +4,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -44,7 +43,6 @@ use Cone\Billingo\ObjectSerializer;
  * SpendingApi Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -382,7 +380,7 @@ class SpendingApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -390,7 +388,7 @@ class SpendingApi
                 $httpBody = new MultipartStream($multipartContents);
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
+                // if Content-Type contains "application/json", json_encode the form parameters
                 $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
@@ -540,7 +538,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SpendingList', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -567,7 +565,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -594,7 +592,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -621,7 +619,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -648,7 +646,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -675,7 +673,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -702,7 +700,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -731,7 +729,7 @@ class SpendingApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -870,7 +868,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -920,7 +918,7 @@ class SpendingApi
         if ($perPage !== null && $perPage < 1) {
             throw new \InvalidArgumentException('invalid value for "$perPage" when calling SpendingApi.spendingList, must be bigger than or equal to 1.');
         }
-        
+
 
 
 
@@ -1055,7 +1053,7 @@ class SpendingApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -1063,7 +1061,7 @@ class SpendingApi
                 $httpBody = new MultipartStream($multipartContents);
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
+                // if Content-Type contains "application/json", json_encode the form parameters
                 $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
@@ -1193,7 +1191,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Spending', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1220,7 +1218,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1247,7 +1245,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -1274,7 +1272,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1301,7 +1299,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -1328,7 +1326,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -1355,7 +1353,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -1382,7 +1380,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -1411,7 +1409,7 @@ class SpendingApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -1538,7 +1536,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -1592,7 +1590,7 @@ class SpendingApi
         // for model (json/xml)
         if (isset($spendingSave)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the body
+                // if Content-Type contains "application/json", json_encode the body
                 $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($spendingSave));
             } else {
                 $httpBody = $spendingSave;
@@ -1605,7 +1603,7 @@ class SpendingApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -1613,7 +1611,7 @@ class SpendingApi
                 $httpBody = new MultipartStream($multipartContents);
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
+                // if Content-Type contains "application/json", json_encode the form parameters
                 $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
@@ -1743,7 +1741,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Spending', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1770,7 +1768,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1797,7 +1795,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -1824,7 +1822,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -1851,7 +1849,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -1878,7 +1876,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -1905,7 +1903,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -1932,7 +1930,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -1961,7 +1959,7 @@ class SpendingApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -2088,7 +2086,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -2162,7 +2160,7 @@ class SpendingApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -2170,7 +2168,7 @@ class SpendingApi
                 $httpBody = new MultipartStream($multipartContents);
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
+                // if Content-Type contains "application/json", json_encode the form parameters
                 $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
@@ -2302,7 +2300,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\Spending', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2329,7 +2327,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2356,7 +2354,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -2383,7 +2381,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 403:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2410,7 +2408,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -2437,7 +2435,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -2464,7 +2462,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -2491,7 +2489,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 404:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -2518,7 +2516,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -2547,7 +2545,7 @@ class SpendingApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -2684,7 +2682,7 @@ class SpendingApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -2754,7 +2752,7 @@ class SpendingApi
         // for model (json/xml)
         if (isset($spendingSave)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the body
+                // if Content-Type contains "application/json", json_encode the body
                 $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($spendingSave));
             } else {
                 $httpBody = $spendingSave;
@@ -2767,7 +2765,7 @@ class SpendingApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -2775,7 +2773,7 @@ class SpendingApi
                 $httpBody = new MultipartStream($multipartContents);
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
+                // if Content-Type contains "application/json", json_encode the form parameters
                 $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
