@@ -5,9 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -30,13 +28,13 @@
 
 namespace Cone\Billingo\Model;
 
+use Cone\Billingo\ObjectSerializer;
+
 /**
  * DocumentForm Class Doc Comment
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 class DocumentForm
@@ -50,7 +48,6 @@ class DocumentForm
 
     /**
      * Gets allowable values of the enum
-     *
      * @return string[]
      */
     public static function getAllowableEnumValues()

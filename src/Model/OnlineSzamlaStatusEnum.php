@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -28,13 +27,13 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * OnlineSzamlaStatusEnum Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -163,9 +162,7 @@ class OnlineSzamlaStatusEnum
             self::UNDER_TAX_LIMIT,
             self::USER_HAS_INVALID_KOBAK,
             self::USER_HASNOT_KOBAK,
-            self::VALIDATION_OK
+            self::VALIDATION_OK,
         ];
     }
 }
-
-

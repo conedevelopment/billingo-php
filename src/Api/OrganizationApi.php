@@ -4,7 +4,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -44,7 +43,6 @@ use Cone\Billingo\ObjectSerializer;
  * OrganizationApi Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -216,7 +214,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\OrganizationData', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 400:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -243,7 +241,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 401:
                     if ('\Cone\Billingo\Model\ClientErrorResponse' === '\SplFileObject') {
@@ -270,7 +268,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ClientErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 402:
                     if ('\Cone\Billingo\Model\SubscriptionErrorResponse' === '\SplFileObject') {
@@ -297,7 +295,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\SubscriptionErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 422:
                     if ('\Cone\Billingo\Model\ValidationErrorResponse' === '\SplFileObject') {
@@ -324,7 +322,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ValidationErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 429:
                     if ('\Cone\Billingo\Model\TooManyRequestsResponse' === '\SplFileObject') {
@@ -351,7 +349,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\TooManyRequestsResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 case 500:
                     if ('\Cone\Billingo\Model\ServerErrorResponse' === '\SplFileObject') {
@@ -378,7 +376,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, '\Cone\Billingo\Model\ServerErrorResponse', []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
             }
 
@@ -407,7 +405,7 @@ class OrganizationApi
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
-                $response->getHeaders()
+                $response->getHeaders(),
             ];
 
         } catch (ApiException $e) {
@@ -524,7 +522,7 @@ class OrganizationApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
@@ -582,7 +580,7 @@ class OrganizationApi
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
@@ -590,7 +588,7 @@ class OrganizationApi
                 $httpBody = new MultipartStream($multipartContents);
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
+                // if Content-Type contains "application/json", json_encode the form parameters
                 $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)

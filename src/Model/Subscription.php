@@ -5,9 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -37,14 +35,11 @@ use Cone\Billingo\ObjectSerializer;
  * Subscription Class Doc Comment
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
- *
  * @implements \ArrayAccess<string, mixed>
  */
-class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
+class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -69,9 +64,7 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
      * Array of property to format mappings. Used for (de)serialization
      *
      * @var string[]
-     *
      * @phpstan-var array<string, string|null>
-     *
      * @psalm-var array<string, string|null>
      */
     protected static $openAPIFormats = [
@@ -118,6 +111,8 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Array of nullable properties
+     *
+     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -137,7 +132,7 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param  bool[]  $openAPINullablesSetToNull
+     * @param bool[] $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -146,6 +141,9 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -154,6 +152,9 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -232,6 +233,7 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
         return self::$openAPIModelName;
     }
 
+
     /**
      * Associative array for storing property values
      *
@@ -242,10 +244,10 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Constructor
      *
-     * @param  mixed[]  $data Associated array of property values
+     * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(?array $data = null)
+    public function __construct(array $data = null)
     {
         $this->setIfExists('expirationDate', $data ?? [], null);
         $this->setIfExists('features', $data ?? [], null);
@@ -256,7 +258,9 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
      * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
      * $this->openAPINullablesSetToNull array
      *
-     * @param  mixed  $defaultValue
+     * @param string $variableName
+     * @param array  $fields
+     * @param mixed  $defaultValue
      */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
@@ -290,6 +294,7 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
         return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
      * Gets expirationDate
      *
@@ -303,7 +308,8 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets expirationDate
      *
-     * @param  \DateTime|null  $expirationDate expirationDate
+     * @param \DateTime|null $expirationDate expirationDate
+     *
      * @return self
      */
     public function setExpirationDate($expirationDate)
@@ -329,7 +335,8 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets features
      *
-     * @param  \Cone\Billingo\Model\Feature[]|null  $features features
+     * @param \Cone\Billingo\Model\Feature[]|null $features features
+     *
      * @return self
      */
     public function setFeatures($features)
@@ -341,11 +348,12 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
+     * @return bool
      */
     public function offsetExists($offset): bool
     {
@@ -355,7 +363,8 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Gets offset.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -367,8 +376,10 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets value based on offset.
      *
-     * @param  int|null  $offset Offset
-     * @param  mixed  $value  Value to be set
+     * @param int|null $offset Offset
+     * @param mixed    $value  Value to be set
+     *
+     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -382,7 +393,9 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Unsets offset.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
+     * @return void
      */
     public function offsetUnset($offset): void
     {
@@ -391,7 +404,6 @@ class Subscription implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value

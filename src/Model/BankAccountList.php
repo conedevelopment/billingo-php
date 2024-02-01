@@ -5,9 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -37,16 +35,12 @@ use Cone\Billingo\ObjectSerializer;
  * BankAccountList Class Doc Comment
  *
  * @category Class
- *
  * @description A object with a data property that contains an array of up to limit bank accounts. Each entry in the array is a separate bank account object. If no more bank accounts are available, the resulting array will be empty.
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
- *
  * @implements \ArrayAccess<string, mixed>
  */
-class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
+class BankAccountList implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -76,9 +70,7 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
      * Array of property to format mappings. Used for (de)serialization
      *
      * @var string[]
-     *
      * @phpstan-var array<string, string|null>
-     *
      * @psalm-var array<string, string|null>
      */
     protected static $openAPIFormats = [
@@ -135,6 +127,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Array of nullable properties
+     *
+     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -154,7 +148,7 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param  bool[]  $openAPINullablesSetToNull
+     * @param bool[] $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -163,6 +157,9 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -171,6 +168,9 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -264,6 +264,7 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
         return self::$openAPIModelName;
     }
 
+
     /**
      * Associative array for storing property values
      *
@@ -274,10 +275,10 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Constructor
      *
-     * @param  mixed[]  $data Associated array of property values
+     * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(?array $data = null)
+    public function __construct(array $data = null)
     {
         $this->setIfExists('data', $data ?? [], null);
         $this->setIfExists('total', $data ?? [], null);
@@ -293,7 +294,9 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
      * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
      * $this->openAPINullablesSetToNull array
      *
-     * @param  mixed  $defaultValue
+     * @param string $variableName
+     * @param array  $fields
+     * @param mixed  $defaultValue
      */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
@@ -327,6 +330,7 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
         return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
      * Gets data
      *
@@ -340,7 +344,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets data
      *
-     * @param  \Cone\Billingo\Model\BankAccount[]|null  $data data
+     * @param \Cone\Billingo\Model\BankAccount[]|null $data data
+     *
      * @return self
      */
     public function setData($data)
@@ -366,7 +371,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets total
      *
-     * @param  int|null  $total total
+     * @param int|null $total total
+     *
      * @return self
      */
     public function setTotal($total)
@@ -392,7 +398,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets perPage
      *
-     * @param  int|null  $perPage perPage
+     * @param int|null $perPage perPage
+     *
      * @return self
      */
     public function setPerPage($perPage)
@@ -418,7 +425,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets currentPage
      *
-     * @param  int|null  $currentPage currentPage
+     * @param int|null $currentPage currentPage
+     *
      * @return self
      */
     public function setCurrentPage($currentPage)
@@ -444,7 +452,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets lastPage
      *
-     * @param  int|null  $lastPage lastPage
+     * @param int|null $lastPage lastPage
+     *
      * @return self
      */
     public function setLastPage($lastPage)
@@ -470,7 +479,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets prevPageUrl
      *
-     * @param  string|null  $prevPageUrl prevPageUrl
+     * @param string|null $prevPageUrl prevPageUrl
+     *
      * @return self
      */
     public function setPrevPageUrl($prevPageUrl)
@@ -496,7 +506,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets nextPageUrl
      *
-     * @param  string|null  $nextPageUrl nextPageUrl
+     * @param string|null $nextPageUrl nextPageUrl
+     *
      * @return self
      */
     public function setNextPageUrl($nextPageUrl)
@@ -508,11 +519,12 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
+     * @return bool
      */
     public function offsetExists($offset): bool
     {
@@ -522,7 +534,8 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Gets offset.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -534,8 +547,10 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Sets value based on offset.
      *
-     * @param  int|null  $offset Offset
-     * @param  mixed  $value  Value to be set
+     * @param int|null $offset Offset
+     * @param mixed    $value  Value to be set
+     *
+     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -549,7 +564,9 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
     /**
      * Unsets offset.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
+     * @return void
      */
     public function offsetUnset($offset): void
     {
@@ -558,7 +575,6 @@ class BankAccountList implements \JsonSerializable, ArrayAccess, ModelInterface
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value

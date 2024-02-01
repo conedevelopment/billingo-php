@@ -5,7 +5,6 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -28,13 +27,13 @@
  */
 
 namespace Cone\Billingo\Model;
-use \Cone\Billingo\ObjectSerializer;
+
+use Cone\Billingo\ObjectSerializer;
 
 /**
  * DocumentLanguage Class Doc Comment
  *
  * @category Class
- * @package  Cone\Billingo
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -76,9 +75,7 @@ class DocumentLanguage
             self::IT,
             self::RO,
             self::SK,
-            self::US
+            self::US,
         ];
     }
 }
-
-

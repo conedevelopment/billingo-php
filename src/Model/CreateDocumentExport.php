@@ -5,9 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
  */
 
@@ -37,14 +35,11 @@ use Cone\Billingo\ObjectSerializer;
  * CreateDocumentExport Class Doc Comment
  *
  * @category Class
- *
  * @author   OpenAPI Generator team
- *
  * @link     https://openapi-generator.tech
- *
  * @implements \ArrayAccess<string, mixed>
  */
-class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInterface
+class CreateDocumentExport implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -80,9 +75,7 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
      * Array of property to format mappings. Used for (de)serialization
      *
      * @var string[]
-     *
      * @phpstan-var array<string, string|null>
-     *
      * @psalm-var array<string, string|null>
      */
     protected static $openAPIFormats = [
@@ -151,6 +144,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
 
     /**
      * Array of nullable properties
+     *
+     * @return array
      */
     protected static function openAPINullables(): array
     {
@@ -170,7 +165,7 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Setter - Array of nullable field names deliberately set to null
      *
-     * @param  bool[]  $openAPINullablesSetToNull
+     * @param bool[] $openAPINullablesSetToNull
      */
     private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
     {
@@ -179,6 +174,9 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
 
     /**
      * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool
     {
@@ -187,6 +185,9 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -298,6 +299,7 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
         return self::$openAPIModelName;
     }
 
+
     /**
      * Associative array for storing property values
      *
@@ -308,10 +310,10 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Constructor
      *
-     * @param  mixed[]  $data Associated array of property values
+     * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(?array $data = null)
+    public function __construct(array $data = null)
     {
         $this->setIfExists('queryType', $data ?? [], null);
         $this->setIfExists('startDate', $data ?? [], null);
@@ -333,7 +335,9 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
      * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
      * $this->openAPINullablesSetToNull array
      *
-     * @param  mixed  $defaultValue
+     * @param string $variableName
+     * @param array  $fields
+     * @param mixed  $defaultValue
      */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
@@ -365,7 +369,6 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
         if ($this->container['exportType'] === null) {
             $invalidProperties[] = "'exportType' can't be null";
         }
-
         return $invalidProperties;
     }
 
@@ -380,6 +383,7 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
         return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
      * Gets queryType
      *
@@ -393,7 +397,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets queryType
      *
-     * @param  \Cone\Billingo\Model\DocumentExportQueryType  $queryType queryType
+     * @param \Cone\Billingo\Model\DocumentExportQueryType $queryType queryType
+     *
      * @return self
      */
     public function setQueryType($queryType)
@@ -419,7 +424,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets startDate
      *
-     * @param  \DateTime  $startDate startDate
+     * @param \DateTime $startDate startDate
+     *
      * @return self
      */
     public function setStartDate($startDate)
@@ -445,7 +451,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets endDate
      *
-     * @param  \DateTime  $endDate endDate
+     * @param \DateTime $endDate endDate
+     *
      * @return self
      */
     public function setEndDate($endDate)
@@ -471,7 +478,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets documentBlockId
      *
-     * @param  int|null  $documentBlockId documentBlockId
+     * @param int|null $documentBlockId documentBlockId
+     *
      * @return self
      */
     public function setDocumentBlockId($documentBlockId)
@@ -497,7 +505,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets exportType
      *
-     * @param  \Cone\Billingo\Model\DocumentExportType  $exportType exportType
+     * @param \Cone\Billingo\Model\DocumentExportType $exportType exportType
+     *
      * @return self
      */
     public function setExportType($exportType)
@@ -523,7 +532,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets numberStartYear
      *
-     * @param  int|null  $numberStartYear numberStartYear
+     * @param int|null $numberStartYear numberStartYear
+     *
      * @return self
      */
     public function setNumberStartYear($numberStartYear)
@@ -549,7 +559,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets numberStartSequence
      *
-     * @param  int|null  $numberStartSequence numberStartSequence
+     * @param int|null $numberStartSequence numberStartSequence
+     *
      * @return self
      */
     public function setNumberStartSequence($numberStartSequence)
@@ -575,7 +586,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets numberEndYear
      *
-     * @param  int|null  $numberEndYear numberEndYear
+     * @param int|null $numberEndYear numberEndYear
+     *
      * @return self
      */
     public function setNumberEndYear($numberEndYear)
@@ -601,7 +613,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets numberEndSequence
      *
-     * @param  int|null  $numberEndSequence numberEndSequence
+     * @param int|null $numberEndSequence numberEndSequence
+     *
      * @return self
      */
     public function setNumberEndSequence($numberEndSequence)
@@ -627,7 +640,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets paymentMethod
      *
-     * @param  \Cone\Billingo\Model\PaymentMethod|null  $paymentMethod paymentMethod
+     * @param \Cone\Billingo\Model\PaymentMethod|null $paymentMethod paymentMethod
+     *
      * @return self
      */
     public function setPaymentMethod($paymentMethod)
@@ -653,7 +667,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets sortBy
      *
-     * @param  \Cone\Billingo\Model\DocumentExportSortBy|null  $sortBy sortBy
+     * @param \Cone\Billingo\Model\DocumentExportSortBy|null $sortBy sortBy
+     *
      * @return self
      */
     public function setSortBy($sortBy)
@@ -679,7 +694,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets otherOptions
      *
-     * @param  \Cone\Billingo\Model\DocumentExportOtherOptions|null  $otherOptions otherOptions
+     * @param \Cone\Billingo\Model\DocumentExportOtherOptions|null $otherOptions otherOptions
+     *
      * @return self
      */
     public function setOtherOptions($otherOptions)
@@ -705,7 +721,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets filterExtra
      *
-     * @param  \Cone\Billingo\Model\DocumentExportFilterExtra|null  $filterExtra filterExtra
+     * @param \Cone\Billingo\Model\DocumentExportFilterExtra|null $filterExtra filterExtra
+     *
      * @return self
      */
     public function setFilterExtra($filterExtra)
@@ -717,11 +734,12 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
+     * @return bool
      */
     public function offsetExists($offset): bool
     {
@@ -731,7 +749,8 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Gets offset.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
      * @return mixed|null
      */
     #[\ReturnTypeWillChange]
@@ -743,8 +762,10 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Sets value based on offset.
      *
-     * @param  int|null  $offset Offset
-     * @param  mixed  $value  Value to be set
+     * @param int|null $offset Offset
+     * @param mixed    $value  Value to be set
+     *
+     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -758,7 +779,9 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
     /**
      * Unsets offset.
      *
-     * @param  int  $offset Offset
+     * @param int $offset Offset
+     *
+     * @return void
      */
     public function offsetUnset($offset): void
     {
@@ -767,7 +790,6 @@ class CreateDocumentExport implements \JsonSerializable, ArrayAccess, ModelInter
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     *
      * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
      * @return mixed Returns data which can be serialized by json_encode(), which is a value
