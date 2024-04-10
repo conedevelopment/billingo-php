@@ -56,10 +56,7 @@ jobs:
             name: "Determine latest spec version"
             id: "billingo_spec"
             run: |
-                VERSION="$(
-                    wget -qO- "https://api.swaggerhub.com/apis/Billingo/Billingo/settings/default" \
-                        | jq -r '."version"'
-                )"
+                VERSION="3.0.15"
                 echo "version=${VERSION}" >>"${GITHUB_OUTPUT}"
         -
             name: "Install OpenAPI"
