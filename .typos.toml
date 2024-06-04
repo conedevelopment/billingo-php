@@ -11,18 +11,8 @@ extend-ignore-re = [
 
 [default.extend-words]
 # Typos in Billingo spec
-# addresses
-"adresses" = "adresses"
-# history
-"histroy" = "histroy"
-# occurred
-"occured" = "occured"
 # read (past tense)
 "readed" = "readed"
-# retrieves
-"retrives" = "retrives"
-# succeeded
-"succeded" = "succeded"
 
 [default.extend-identifiers]
 "NAM_1" = "NAM_1"
