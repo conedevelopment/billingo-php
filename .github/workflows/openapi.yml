@@ -82,7 +82,7 @@ jobs:
             run: |
                 java -jar "${{ runner.temp }}/openapi-generator-cli.jar" generate \
                     --input-spec "${{ runner.temp }}/spec.json" \
-                    --generator-name php \
+                    --generator-name php-nextgen \
                     --output ./ \
                     --enable-post-process-file \
                     --additional-properties 'invokerPackage=Cone\Billingo,variableNamingConvention=camelCase,srcBasePath=src'
