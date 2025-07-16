@@ -88,14 +88,13 @@ jobs:
                     --additional-properties 'invokerPackage=Cone\Billingo,variableNamingConvention=camelCase,srcBasePath=src'
         -
             name: "Check difference to repository"
-            id: "list_diff"
             run: |
-                if ! git diff --exit-code; then
-                    echo "exit_status=1" >>"${GITHUB_OUTPUT}"
+                if [ -z "$(git status --porcelain)" ]; then
+                    echo "No changes!"
+                    exit 10
                 fi
         -
             name: "Create pull request"
-            if: "${{ steps.list_diff.outputs.exit_status == '1' }}"
             uses: "peter-evans/create-pull-request@v5"
             with:
                 add-paths: "./"
