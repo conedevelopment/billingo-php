@@ -3,6 +3,7 @@
 /.travis.yml
 /git_push.sh
 /composer.json
+/README.md
 /test/
 /tests/
 /phpunit.xml.dist
