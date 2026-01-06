@@ -1,5 +1,4 @@
 .phplint.yml
-README.md
 docs/Api/BankAccountApi.md
 docs/Api/CurrencyApi.md
 docs/Api/DocumentApi.md
