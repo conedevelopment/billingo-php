@@ -1,4 +1,4 @@
-# # ValidationError
+# ValidationError
 
 ## Properties
 

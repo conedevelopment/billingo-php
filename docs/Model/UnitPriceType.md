@@ -1,4 +1,4 @@
-# # UnitPriceType
+# UnitPriceType
 
 ## Properties
 

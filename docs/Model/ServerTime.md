@@ -1,4 +1,4 @@
-# # ServerTime
+# ServerTime
 
 ## Properties
 

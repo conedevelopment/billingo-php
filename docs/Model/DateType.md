@@ -1,4 +1,4 @@
-# # DateType
+# DateType
 
 ## Properties
 

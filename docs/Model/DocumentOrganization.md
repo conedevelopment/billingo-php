@@ -1,4 +1,4 @@
-# # DocumentOrganization
+# DocumentOrganization
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # SpendingPaymentMethod
+# SpendingPaymentMethod
 
 ## Properties
 

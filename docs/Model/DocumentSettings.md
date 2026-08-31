@@ -1,4 +1,4 @@
-# # DocumentSettings
+# DocumentSettings
 
 ## Properties
 

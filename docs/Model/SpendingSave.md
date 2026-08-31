@@ -1,4 +1,4 @@
-# # SpendingSave
+# SpendingSave
 
 ## Properties
 

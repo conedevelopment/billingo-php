@@ -1,4 +1,4 @@
-# # TooManyRequestsResponse
+# TooManyRequestsResponse
 
 ## Properties
 

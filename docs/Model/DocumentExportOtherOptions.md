@@ -1,4 +1,4 @@
-# # DocumentExportOtherOptions
+# DocumentExportOtherOptions
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # DocumentExportQueryType
+# DocumentExportQueryType
 
 ## Properties
 

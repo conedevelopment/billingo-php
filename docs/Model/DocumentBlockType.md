@@ -1,4 +1,4 @@
-# # DocumentBlockType
+# DocumentBlockType
 
 ## Properties
 
