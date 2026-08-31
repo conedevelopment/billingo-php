@@ -1,4 +1,4 @@
-# # PartnerCustomBillingSettings
+# PartnerCustomBillingSettings
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # DocumentExportStatusState
+# DocumentExportStatusState
 
 ## Properties
 

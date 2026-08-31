@@ -1,4 +1,4 @@
-# # ValidationErrorResponse
+# ValidationErrorResponse
 
 ## Properties
 

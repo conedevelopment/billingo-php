@@ -1,4 +1,4 @@
-# # DocumentPartner
+# DocumentPartner
 
 ## Properties
 

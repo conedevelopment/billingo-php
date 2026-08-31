@@ -1,4 +1,4 @@
-# # Entitlement
+# Entitlement
 
 ## Properties
 

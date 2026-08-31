@@ -1,4 +1,4 @@
-# # DocumentSummary
+# DocumentSummary
 
 ## Properties
 

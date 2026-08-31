@@ -1,4 +1,4 @@
-# # PartnerTaxType
+# PartnerTaxType
 
 ## Properties
 

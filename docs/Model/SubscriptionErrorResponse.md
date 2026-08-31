@@ -1,4 +1,4 @@
-# # SubscriptionErrorResponse
+# SubscriptionErrorResponse
 
 ## Properties
 

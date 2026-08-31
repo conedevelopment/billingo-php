@@ -1,4 +1,4 @@
-# # PaymentStatusSpending
+# PaymentStatusSpending
 
 ## Properties
 

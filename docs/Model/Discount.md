@@ -1,4 +1,4 @@
-# # Discount
+# Discount
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # DocumentNotificationStatus
+# DocumentNotificationStatus
 
 ## Properties
 

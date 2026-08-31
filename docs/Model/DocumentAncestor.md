@@ -1,4 +1,4 @@
-# # DocumentAncestor
+# DocumentAncestor
 
 ## Properties
 

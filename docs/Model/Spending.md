@@ -1,4 +1,4 @@
-# # Spending
+# Spending
 
 ## Properties
 
