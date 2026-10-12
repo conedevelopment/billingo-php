@@ -1,4 +1,4 @@
-# # PartnerList
+# PartnerList
 
 ## Properties
 

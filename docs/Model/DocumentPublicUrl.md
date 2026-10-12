@@ -1,4 +1,4 @@
-# # DocumentPublicUrl
+# DocumentPublicUrl
 
 ## Properties
 

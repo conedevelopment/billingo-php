@@ -1,4 +1,4 @@
-# # ReceiptInsert
+# ReceiptInsert
 
 ## Properties
 

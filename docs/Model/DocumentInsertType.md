@@ -1,4 +1,4 @@
-# # DocumentInsertType
+# DocumentInsertType
 
 ## Properties
 

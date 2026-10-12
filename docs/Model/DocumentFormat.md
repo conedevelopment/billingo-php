@@ -1,4 +1,4 @@
-# # DocumentFormat
+# DocumentFormat
 
 ## Properties
 

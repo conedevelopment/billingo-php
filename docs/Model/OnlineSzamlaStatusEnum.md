@@ -1,4 +1,4 @@
-# # OnlineSzamlaStatusEnum
+# OnlineSzamlaStatusEnum
 
 ## Properties
 

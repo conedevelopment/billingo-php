@@ -1,4 +1,4 @@
-# # BankAccountList
+# BankAccountList
 
 ## Properties
 

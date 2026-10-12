@@ -1,4 +1,4 @@
-# # OrganizationData
+# OrganizationData
 
 ## Properties
 

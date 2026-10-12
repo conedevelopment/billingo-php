@@ -1,4 +1,4 @@
-# # ReceiptItemData
+# ReceiptItemData
 
 ## Properties
 

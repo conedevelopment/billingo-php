@@ -1,4 +1,4 @@
-# # ClientError
+# ClientError
 
 ## Properties
 

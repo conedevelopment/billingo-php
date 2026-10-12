@@ -1,4 +1,4 @@
-# # DocumentProductData
+# DocumentProductData
 
 ## Properties
 

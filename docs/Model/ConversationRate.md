@@ -1,4 +1,4 @@
-# # ConversationRate
+# ConversationRate
 
 ## Properties
 

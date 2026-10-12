@@ -1,4 +1,4 @@
-# # SpendingPartner
+# SpendingPartner
 
 ## Properties
 

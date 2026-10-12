@@ -1,4 +1,4 @@
-# # ServerError
+# ServerError
 
 ## Properties
 

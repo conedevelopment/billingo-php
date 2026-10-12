@@ -1,12 +1,11 @@
-# # ReceiptInsertItemsInner
+# ReceiptInsertItemsInner
 
-## Properties
+This model is a `oneOf` wrapper: a value is exactly one of the member types listed below.
+It is never instantiated directly — use one of the concrete types.
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**productId** | **int** |  |
-**name** | **string** |  | [optional]
-**unitPrice** | **float** |  |
-**vat** | [**\Cone\Billingo\Model\Vat**](Vat.md) |  |
+## oneOf
+
+- [**\Cone\Billingo\Model\ReceiptItemData**](ReceiptItemData.md)
+- [**\Cone\Billingo\Model\ReceiptProductData**](ReceiptProductData.md)
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
