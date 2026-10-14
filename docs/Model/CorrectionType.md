@@ -1,4 +1,4 @@
-# # CorrectionType
+# CorrectionType
 
 ## Properties
 

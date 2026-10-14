@@ -1,4 +1,4 @@
-# # DocumentBankAccount
+# DocumentBankAccount
 
 ## Properties
 

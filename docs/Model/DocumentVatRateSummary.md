@@ -1,4 +1,4 @@
-# # DocumentVatRateSummary
+# DocumentVatRateSummary
 
 ## Properties
 

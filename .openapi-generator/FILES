@@ -117,6 +117,7 @@ src/Configuration.php
 src/FormDataProcessor.php
 src/HeaderSelector.php
 src/Model/Address.php
+src/Model/AnyOfInterface.php
 src/Model/BankAccount.php
 src/Model/BankAccountList.php
 src/Model/Category.php
@@ -171,6 +172,7 @@ src/Model/InvoiceSettings.php
 src/Model/LedgerNumberInformation.php
 src/Model/ModelInterface.php
 src/Model/ModificationDocumentInsert.php
+src/Model/OneOfInterface.php
 src/Model/OnlinePayment.php
 src/Model/OnlineSzamlaStatus.php
 src/Model/OnlineSzamlaStatusEnum.php

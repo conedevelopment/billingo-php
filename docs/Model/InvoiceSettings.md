@@ -1,4 +1,4 @@
-# # InvoiceSettings
+# InvoiceSettings
 
 ## Properties
 

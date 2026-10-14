@@ -1,4 +1,4 @@
-# # DocumentBlock
+# DocumentBlock
 
 ## Properties
 

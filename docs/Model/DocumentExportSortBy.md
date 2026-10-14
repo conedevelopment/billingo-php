@@ -1,4 +1,4 @@
-# # DocumentExportSortBy
+# DocumentExportSortBy
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # DocumentList
+# DocumentList
 
 ## Properties
 

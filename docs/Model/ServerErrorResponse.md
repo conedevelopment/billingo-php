@@ -1,4 +1,4 @@
-# # ServerErrorResponse
+# ServerErrorResponse
 
 ## Properties
 

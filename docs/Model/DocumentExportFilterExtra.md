@@ -1,4 +1,4 @@
-# # DocumentExportFilterExtra
+# DocumentExportFilterExtra
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # SpendingListItem
+# SpendingListItem
 
 ## Properties
 

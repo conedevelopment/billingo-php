@@ -1,4 +1,4 @@
-# # OnlineSzamlaStatusMessage
+# OnlineSzamlaStatusMessage
 
 ## Properties
 
